@@ -1,0 +1,142 @@
+
+
+/*
+  This program and the accompanying materials are
+  made available under the terms of the Eclipse Public License v2.0 which accompanies
+  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Copyright Contributors to the Zowe Project.
+*/
+
+.report {
+  padding: 0;
+  border-left: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.report.error {
+  background-color: rgba(247, 230, 230, 1);
+}
+
+.report.warning {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.report.info {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.leftPanel {
+  margin: 0;
+  padding: 0;
+}
+
+.mainPanel {
+  padding: 10px 20px;
+  flex-grow: 1;
+}
+
+.error .mainPanel {
+  border: rgba(255, 92, 73, 1) 1px solid;
+}
+
+.warning .mainPanel {
+  border: rgba(254, 133, 0, 1) 1px solid;
+}
+
+.info .mainPanel {
+  border: rgba(0, 182, 203, 1) 1px solid;
+}
+
+.content {
+  margin-top: 16px;
+  padding: 5px;
+  padding-bottom: 0;
+}
+
+.severityIcon {
+  width: 32px;
+  height: 32px;
+  margin: 16px;
+  background-repeat: no-repeat;
+}
+
+.error .leftPanel {
+  background-color: rgba(255, 92, 73, 1);
+}
+
+.error .severityIcon {
+  background-image: url(../../assets/images/error-critical.png);
+}
+
+.warning .leftPanel {
+  background-color: rgba(254, 133, 0, 1);
+}
+
+.info .leftPanel {
+  background-color: rgba(0, 182, 203, 1);
+}
+
+.warning .severityIcon {
+  background-image: url(../../assets/images/error-warning.png);
+}
+
+.info .severityIcon {
+  background-image: url(../../assets/images/info.png);
+}
+
+.title {
+  border-bottom: 1px solid;
+  font-kerning: normal;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.titleText {
+  font-size: 150%;
+  font-size:21px;
+}
+
+.error .title {
+  border-bottom-color: #AA231F;
+  color: #AA231F;
+}
+
+.warning .title {
+  border-bottom-color: #DB7C00;
+  color: #DB7C00;
+}
+
+.info .title {
+  border-bottom-color: #188291;
+  color: #188291;
+}
+
+.buttonArea {
+  margin: 36px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.timestamp {
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+
+/*
+  This program and the accompanying materials are
+  made available under the terms of the Eclipse Public License v2.0 which accompanies
+  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Copyright Contributors to the Zowe Project.
+*/
+
