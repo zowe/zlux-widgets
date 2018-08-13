@@ -9,7 +9,7 @@ Copyright Contributors to the Zowe Project.
 # zLUX widgets library
 
 Adding the library to your package:
-`npm install "git+ssh://git@github.com:rocketgiza/zlux-widgets.git" --save`
+`npm install "git+ssh://git@github.com:zowe/zlux-widgets.git" --save`
 
 Popup Window
 Imports:  
