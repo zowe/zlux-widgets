@@ -83,20 +83,20 @@ export class ZluxFlyover {
 })
 export class ZluxFlyoverComponent implements OnInit {
   @Input() hideDelayMs: number = 200;
-  private top: number;
-  private left: number;
-  private hover: boolean = false;
-  private targetHover: boolean = false;
-  private active: boolean = false;
-  private arrowTopOffsetLeft: number;
-  private arrowTopOffsetBottom: number;
-  private arrowBottomOffsetLeft: number;
-  private arrowBottomOffsetBottom: number;
-  private position: string = 'top';
-  private flyoverMarginRight: number = 15;
-  private flyoverMarginLeft: number = 15;
-  private flyoverMarginTop: number = 10;
-  private flyoverMarginBottom: number = 20;
+  top: number;
+  left: number;
+  hover: boolean = false;
+  targetHover: boolean = false;
+  active: boolean = false;
+  arrowTopOffsetLeft: number;
+  arrowTopOffsetBottom: number;
+  arrowBottomOffsetLeft: number;
+  arrowBottomOffsetBottom: number;
+  position: string = 'top';
+  flyoverMarginRight: number = 15;
+  flyoverMarginLeft: number = 15;
+  flyoverMarginTop: number = 10;
+  flyoverMarginBottom: number = 20;
   hideTimer: number;
 
   constructor(public el: ElementRef) { }
@@ -272,7 +272,7 @@ export class ZluxFlyoverComponent implements OnInit {
 
   hide() {
     this.targetHover = false;
-    this.hideTimer = setTimeout(()=>{
+    this.hideTimer = window.setTimeout(()=>{
       this.forceHide();
     }, this.hideDelayMs);
   }

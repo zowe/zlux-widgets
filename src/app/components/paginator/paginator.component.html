@@ -37,7 +37,7 @@
       zluxInputText
       [value]="pageIndex + 1"
       (change)="onChange($event)">
-    of
+      <ng-container i18n="of preposition in clause n-m of total@@paginator">of</ng-container>
     <a *ngIf="hasMoreRecords; else haveNotMorePage"
       href="#" (click)="toLastPage()" zluxFlyover [flyover]="fetchMoreFlyover"> {{loadedPageNumber}}*</a>
     <ng-template #haveNotMorePage>
@@ -53,7 +53,7 @@
       </svg>
   </zlux-button>
   <div class="right-page-area">
-    {{indexMin}}-{{indexMax}} of
+    {{indexMin}}-{{indexMax}} <ng-container i18n="of preposition in clause n-m of total@@paginator">of</ng-container>
     <a *ngIf="hasMoreRecords; else haveNotMoreRecord"
       href="#" (click)="toLastPage()" zluxFlyover [flyover]="fetchMoreFlyover"> {{totalRecords}}*</a>
     <ng-template #haveNotMoreRecord>

@@ -20,7 +20,7 @@ export declare class ZluxPopupWindowComponent implements OnInit, OnDestroy {
     maxWidth: string;
     maxHeight: string;
     onCloseWindow: EventEmitter<any>;
-    private popupStyle;
+    popupStyle: popupWindowPopupStyle;
     constructor(popupManager: ZluxPopupManagerService);
     ngOnInit(): void;
     ngOnDestroy(): void;

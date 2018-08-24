@@ -21,11 +21,11 @@ export declare class ZluxPaginatorComponent implements OnChanges {
     onPageChange: EventEmitter<any>;
     onFetchMoreData: EventEmitter<void>;
     pageIndex: number;
-    private loadedPageNumber;
-    private isInputIncorrect;
-    private preventEvent;
-    private readonly indexMax;
-    private readonly indexMin;
+    loadedPageNumber: number;
+    isInputIncorrect: boolean;
+    preventEvent: boolean;
+    readonly indexMax: number;
+    readonly indexMin: number;
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterContentChecked(): void;
     onChange(event: any): void;

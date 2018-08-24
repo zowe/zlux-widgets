@@ -13,6 +13,8 @@
 var webpack = require('webpack');
 var path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 function root(__path) {
   return path.join(__dirname, __path);
@@ -87,7 +89,17 @@ var config = {
     new webpack.WatchIgnorePlugin([
       /\.js$/,
       /\.d\.ts$/
-    ])
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: '**/*.metadata.json',
+        to: '.',
+        context: './out_tsc/src/app/'
+      }
+    ]),
+    new WebpackShellPlugin({
+      onBuildStart: ['npm run metadata']
+    })
   ]
 };
 
