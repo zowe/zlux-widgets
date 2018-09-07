@@ -29,7 +29,7 @@ export class ZluxPopupWindowComponent implements OnInit, OnDestroy {
 
   @Output() onCloseWindow = new EventEmitter<any>();
 
-  private popupStyle: popupWindowPopupStyle = {};
+  popupStyle: popupWindowPopupStyle = {};
   constructor(private popupManager: ZluxPopupManagerService) { }
   ngOnInit() {
     if (this.width) {

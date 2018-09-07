@@ -33,13 +33,13 @@ export class ZluxPaginatorComponent implements OnChanges {
   @Output() onPageChange: EventEmitter<any> = new EventEmitter<any>();
   @Output() onFetchMoreData: EventEmitter<void> = new EventEmitter<void>();
   public pageIndex: number = -1;
-  private loadedPageNumber: number;
-  private isInputIncorrect: boolean;
-  private preventEvent: boolean = false;
-  private get indexMax(): number {
+  loadedPageNumber: number;
+  isInputIncorrect: boolean;
+  preventEvent: boolean = false;
+  get indexMax(): number {
     return this.totalRecords > (this.pageIndex + 1) * this.rows ? (this.pageIndex + 1) * this.rows : this.totalRecords;
   }
-  private get indexMin() : number {
+  get indexMin() : number {
     return this.indexMax > 0 ? this.pageIndex * this.rows + 1 : 0;
   }
 
