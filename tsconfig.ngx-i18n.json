@@ -1,11 +1,11 @@
 {
   "compileOnSave": false,
+  "include": [
+    "src/app/*"
+  ],
   "compilerOptions": {
     "outDir": "./out_tsc",
     "baseUrl": "./src/app",
-    "sourceMap": true,
-    "declaration": true,
-    "declarationDir": ".",
     "module": "amd",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -18,6 +18,11 @@
       "es2016",
       "dom"
     ],
-    "paths": {}
+    "paths": {
+    }
+  },
+  "angularCompilerOptions": {
+    "skipMetadataEmit" : false,
+    "enableResourceInlining": true
   }
 }
