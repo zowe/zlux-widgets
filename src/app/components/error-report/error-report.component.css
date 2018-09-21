@@ -55,6 +55,10 @@
   margin-top: 16px;
   padding: 5px;
   padding-bottom: 0;
+  user-select: text;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
 }
 
 .severityIcon {
