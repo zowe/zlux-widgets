@@ -62,7 +62,7 @@ Example:
 </zlux-popup-window>
 ```
 # For Maintainers
-Because this library is used an an npm package, you must remember to commit changes to index.js and index.js.map, and any other files that changed as the result of building the application (e.g. **/*.d.ts)
+Because this library is used as an npm package, you must remember to commit changes to index.js and index.js.map, and any other files that changed as the result of building the application (e.g. **/*.d.ts)
 
 Also, remember to retain the copyright headers in those build products (they currently need to be restored "by hand")
 
