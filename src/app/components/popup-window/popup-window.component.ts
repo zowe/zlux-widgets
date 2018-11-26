@@ -23,7 +23,7 @@ import { ZluxPopupManagerService } from '../../services/popup-manager.service';
 export class ZluxPopupWindowComponent implements OnInit, OnDestroy {
   @Input() header: string;
   @Input() dark: boolean;
-  @Input() width: string = "";
+  @Input() currentStyle: popupWindowPopupStyle = {};
   @Input() maxWidth: string = "";
   @Input() maxHeight: string = "";
 
@@ -32,13 +32,13 @@ export class ZluxPopupWindowComponent implements OnInit, OnDestroy {
   popupStyle: popupWindowPopupStyle = {};
   constructor(private popupManager: ZluxPopupManagerService) { }
   ngOnInit() {
-    if (this.width) {
-      this.popupStyle.width = this.width;
+    if (this.currentStyle) {
+      this.popupStyle = this.currentStyle;
     }
-    if (this.width) {
+    if (this.maxWidth) {
       this.popupStyle['max-width'] = this.maxWidth;
     }
-    if (this.width) {
+    if (this.maxHeight) {
       this.popupStyle['max-height'] = this.maxHeight;
     }
     this.popupManager.block();
@@ -58,7 +58,6 @@ export class ZluxPopupWindowComponent implements OnInit, OnDestroy {
 export class ZluxPopupWindowModule { }
 
 export interface popupWindowPopupStyle {
-  width?: string;
 }
 
 
