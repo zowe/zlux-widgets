@@ -1,5 +1,3 @@
-
-
 /*
   This program and the accompanying materials are
   made available under the terms of the Eclipse Public License v2.0 which accompanies
@@ -16,7 +14,7 @@ export declare class ZluxPopupWindowComponent implements OnInit, OnDestroy {
     private popupManager;
     header: string;
     dark: boolean;
-    width: string;
+    currentStyle: popupWindowPopupStyle;
     maxWidth: string;
     maxHeight: string;
     onCloseWindow: EventEmitter<any>;
@@ -28,9 +26,7 @@ export declare class ZluxPopupWindowComponent implements OnInit, OnDestroy {
 export declare class ZluxPopupWindowModule {
 }
 export interface popupWindowPopupStyle {
-    width?: string;
 }
-
 
 /*
   This program and the accompanying materials are
@@ -41,4 +37,3 @@ export interface popupWindowPopupStyle {
   
   Copyright Contributors to the Zowe Project.
 */
-
