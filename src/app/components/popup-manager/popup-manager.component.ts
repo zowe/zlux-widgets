@@ -33,7 +33,8 @@ export class ZluxPopupManagerComponent {
   constructor(private popupManager: ZluxPopupManagerService) {
     popupManager.on('block', this.block.bind(this));
     popupManager.on('unblock', this.unblock.bind(this));
-    popupManager.on('createReport', this.createReport.bind(this));
+    popupManager.on('createReport', (error:ErrorReportStruct)=>this.createReport(error));
+    popupManager.on('removeReport', (id:number)=>this.removeReport(id));
   }
 
   updateErrors() {
@@ -63,6 +64,20 @@ export class ZluxPopupManagerComponent {
     this.updateErrors();
   }
 
+  removeReport(id: number) {
+    if (this.currentErrorBlocking && this.currentErrorBlocking.id === id) {
+      this.closeForegroundError(this.currentErrorBlocking);
+    } else if (this.currentErrorNonblocking && this.currentErrorNonblocking.id === id) {
+      this.closeForegroundError(this.currentErrorNonblocking);
+    } else {
+      for (let i = 0; i < this.errors.length; i++) {
+        if (this.errors[i].id === id) {
+          this.errors.splice(i,1);
+        }
+      }
+    }
+  }
+
   block() {
     this.blockCount++;
   }
@@ -71,18 +86,21 @@ export class ZluxPopupManagerComponent {
     this.blockCount--;
   }
 
+  closeForegroundError(error) {
+    if (error === this.currentErrorBlocking) {
+      this.unblock();
+      this.currentErrorBlocking = null;
+    } else {
+      this.currentErrorNonblocking = null;
+    }
+    this.updateErrors();
+  }
+
   onChoose(error, buttonCaption) {
     const button = error.buttons.find(b => b.caption === buttonCaption);
     if (button.closeReport) {
-      if (error === this.currentErrorBlocking) {
-        this.unblock();
-        this.currentErrorBlocking = null;
-      } else {
-        this.currentErrorNonblocking = null;
-      }
-      this.updateErrors();
+      this.closeForegroundError(error);
     }
-
     error.subject.next(buttonCaption);
   }
 

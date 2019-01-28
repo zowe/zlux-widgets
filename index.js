@@ -2749,6 +2749,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(16), __webpack_require__(132)], __WEBPACK_AMD_DEFINE_RESULT__ = function (require, exports, core_1, Rx) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    function getSimpleID() {
+        return Number(Math.random() + Date.now());
+    }
     var ZluxErrorSeverity;
     (function (ZluxErrorSeverity) {
         ZluxErrorSeverity["ERROR"] = "error";
@@ -2815,6 +2818,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
                 case ZluxErrorSeverity.INFO: return this.logger.INFO;
             }
         };
+        ZluxPopupManagerService.prototype.removeReport = function (id) {
+            this.broadcast('removeReport', id);
+        };
+        ZluxPopupManagerService.prototype.createErrorReport = function (severity, title, text, options) {
+            options = options || {};
+            var buttons = options.buttons || ["Close"];
+            var timestamp = options.timestamp || new Date();
+            buttons = this.processButtons(buttons);
+            var subject = new Rx.ReplaySubject();
+            var errorReport = {
+                severity: severity,
+                title: title,
+                text: text,
+                buttons: buttons,
+                subject: subject,
+                timestamp: timestamp,
+                id: getSimpleID(),
+                modal: options.blocking || false
+            };
+            //the object will be shallow cloned
+            this.broadcast('createReport', errorReport);
+            if (this.logger) {
+                this.logger.log(this.getLoggerSeverity(severity), text);
+            }
+            return errorReport;
+        };
         ZluxPopupManagerService.prototype.reportError = function (severity, title, text, options) {
             options = options || {};
             var buttons = options.buttons || ["Close"];
@@ -2828,6 +2857,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
                 buttons: buttons,
                 subject: subject,
                 timestamp: timestamp,
+                id: getSimpleID(),
                 modal: options.blocking || false
             });
             if (this.logger) {
@@ -22789,6 +22819,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     Object.defineProperty(exports, "__esModule", { value: true });
     var ZluxPopupManagerComponent = /** @class */ (function () {
         function ZluxPopupManagerComponent(popupManager) {
+            var _this = this;
             this.popupManager = popupManager;
             this.blockCount = 0;
             this.currentErrorBlocking = null;
@@ -22796,7 +22827,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
             this.errors = [];
             popupManager.on('block', this.block.bind(this));
             popupManager.on('unblock', this.unblock.bind(this));
-            popupManager.on('createReport', this.createReport.bind(this));
+            popupManager.on('createReport', function (error) { return _this.createReport(error); });
+            popupManager.on('removeReport', function (id) { return _this.removeReport(id); });
         }
         ZluxPopupManagerComponent.prototype.updateErrors = function () {
             if (this.currentErrorBlocking == null) {
@@ -22823,23 +22855,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
             }
             this.updateErrors();
         };
+        ZluxPopupManagerComponent.prototype.removeReport = function (id) {
+            if (this.currentErrorBlocking && this.currentErrorBlocking.id === id) {
+                this.closeForegroundError(this.currentErrorBlocking);
+            }
+            else if (this.currentErrorNonblocking && this.currentErrorNonblocking.id === id) {
+                this.closeForegroundError(this.currentErrorNonblocking);
+            }
+            else {
+                for (var i = 0; i < this.errors.length; i++) {
+                    if (this.errors[i].id === id) {
+                        this.errors.splice(i, 1);
+                    }
+                }
+            }
+        };
         ZluxPopupManagerComponent.prototype.block = function () {
             this.blockCount++;
         };
         ZluxPopupManagerComponent.prototype.unblock = function () {
             this.blockCount--;
         };
+        ZluxPopupManagerComponent.prototype.closeForegroundError = function (error) {
+            if (error === this.currentErrorBlocking) {
+                this.unblock();
+                this.currentErrorBlocking = null;
+            }
+            else {
+                this.currentErrorNonblocking = null;
+            }
+            this.updateErrors();
+        };
         ZluxPopupManagerComponent.prototype.onChoose = function (error, buttonCaption) {
             var button = error.buttons.find(function (b) { return b.caption === buttonCaption; });
             if (button.closeReport) {
-                if (error === this.currentErrorBlocking) {
-                    this.unblock();
-                    this.currentErrorBlocking = null;
-                }
-                else {
-                    this.currentErrorNonblocking = null;
-                }
-                this.updateErrors();
+                this.closeForegroundError(error);
             }
             error.subject.next(buttonCaption);
         };

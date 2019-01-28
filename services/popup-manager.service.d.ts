@@ -5,6 +5,9 @@ export interface ErrorReportStruct {
     text: string;
     title: string;
     buttons: string[];
+    id: number;
+    timestamp: Date;
+    subject: Rx.Subject<any>;
 }
 export declare enum ZluxErrorSeverity {
     ERROR = "error",
@@ -24,5 +27,7 @@ export declare class ZluxPopupManagerService {
     block(): void;
     unblock(): void;
     getLoggerSeverity(severity: ZluxErrorSeverity): any;
+    removeReport(id: number): void;
+    createErrorReport(severity: ZluxErrorSeverity, title: string, text: string, options?: any): ErrorReportStruct;
     reportError(severity: ZluxErrorSeverity, title: string, text: string, options?: any): Rx.Observable<any>;
 }
