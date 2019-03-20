@@ -21,8 +21,10 @@ export declare class ZluxPopupManagerComponent {
     constructor(popupManager: ZluxPopupManagerService);
     updateErrors(): void;
     createReport(error: any): void;
+    removeReport(id: number): void;
     block(): void;
     unblock(): void;
+    closeForegroundError(error: any): void;
     onChoose(error: any, buttonCaption: any): void;
     getClass(): string;
 }

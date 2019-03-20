@@ -13,12 +13,19 @@
 import { Injectable } from '@angular/core';
 import * as Rx from 'rxjs/Rx';
 
+function getSimpleID() {
+  return Number(Math.random() + Date.now());
+}
+
 export interface ErrorReportStruct {
   severity: string,
   modal: boolean,
   text: string,
   title: string,
-  buttons: string[]
+  buttons: string[],
+  id: number,
+  timestamp: Date,
+  subject: Rx.Subject<any>
 }
 
 export enum ZluxErrorSeverity {
@@ -99,6 +106,39 @@ export class ZluxPopupManagerService {
     }
   }
 
+  removeReport(id: number) {
+    this.broadcast('removeReport', id);
+  }
+
+  createErrorReport(severity: ZluxErrorSeverity, title: string, text: string, options?: any): ErrorReportStruct {
+    options = options || {};
+    let buttons = options.buttons || ["Close"];
+    const timestamp: Date = options.timestamp || new Date();
+
+    buttons = this.processButtons(buttons);
+    const subject = new Rx.ReplaySubject();
+    
+    let errorReport: ErrorReportStruct = {
+      severity,
+      title,
+      text,
+      buttons,
+      subject,
+      timestamp,
+      id: getSimpleID(),
+      modal: options.blocking || false
+    };
+
+    //the object will be shallow cloned
+    this.broadcast('createReport', errorReport);
+
+    if (this.logger) {
+      this.logger.log(this.getLoggerSeverity(severity), text);
+    }
+
+    return errorReport;
+  }
+
   reportError(severity: ZluxErrorSeverity, title: string, text: string, options?: any): Rx.Observable<any> {
     options = options || {};
     let buttons = options.buttons || ["Close"];
@@ -114,6 +154,7 @@ export class ZluxPopupManagerService {
       buttons,
       subject,
       timestamp,
+      id: getSimpleID(),
       modal: options.blocking || false
     } as ErrorReportStruct);
 
