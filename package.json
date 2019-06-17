@@ -7,6 +7,9 @@
     "metadata": "npx ngc -p tsconfig.ngx-i18n.json",
     "lint": "npx ng lint"
   },
+  "publishConfig": {
+    "registry": "https://gizaartifactory.jfrog.io/gizaartifactory/api/npm/npm-local-release/"
+  },
   "license": "EPL-2.0",
   "dependencies": {
     "@angular/animations": "~6.0.9",
