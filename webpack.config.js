@@ -26,7 +26,7 @@ var config = {
   output: {
     path: root('.'),
     filename: 'index.js',
-    library: '@zlux/widgets',
+    library: '@zowe/zlux-widgets',
     libraryTarget: 'amd',
     umdNamedDefine: true
   },
