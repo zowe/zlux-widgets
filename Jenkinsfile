@@ -36,7 +36,7 @@ node('zlux-jenkins-agent') {
 
     pipeline.sonarScan()
     pipeline.build()
-    pipeline.test()
+    pipeline.test(name: "unit tests")
     pipeline.publish()
     pipeline.release()
 
