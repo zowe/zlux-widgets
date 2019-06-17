@@ -32,7 +32,8 @@ node('zlux-jenkins-agent') {
             email                      : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_EMAIL,
             usernamePasswordCredential : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_CREDENTIAL,
         ],
-        disableLint: true
+        disableLint: true,
+        disableAudit: true,
     )
 
     pipeline.sonarScan()
