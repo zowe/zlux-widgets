@@ -32,8 +32,8 @@ node('zlux-jenkins-agent') {
             email                      : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_EMAIL,
             usernamePasswordCredential : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_CREDENTIAL,
         ],
-        disableLint: true,
-        disableAudit: true,
+        disableLint: true,  // FIXME
+        disableAudit: true, // FIXME
     )
 
     pipeline.sonarScan(
@@ -41,6 +41,11 @@ node('zlux-jenkins-agent') {
         scannerTool:   lib.Constants.DEFAULT_SONARQUBE_SCANNER_TOOL
     )
     pipeline.build()
+    pipeline.test(
+        name              : "no tests",  // FIXME
+        operation         : {},
+        allowMissingJunit : true
+    )
     pipeline.publish()
     pipeline.release()
 
