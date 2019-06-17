@@ -2,10 +2,10 @@
   "name": "@zowe/zlux-widgets",
   "version": "0.0.4",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
-    "build": "webpack --progress --colors",
-    "metadata": "ngc -p tsconfig.ngx-i18n.json",
-    "lint": "ng lint"
+    "start": "npx webpack --progress --colors --watch",
+    "build": "npx webpack --progress --colors",
+    "metadata": "npx ngc -p tsconfig.ngx-i18n.json",
+    "lint": "npx ng lint"
   },
   "license": "EPL-2.0",
   "dependencies": {
