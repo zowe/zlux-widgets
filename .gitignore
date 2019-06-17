@@ -11,6 +11,8 @@
 /web
 /tmp
 /out_tsc
+/services
+/components
 
 # dependencies
 /node_modules
