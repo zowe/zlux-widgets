@@ -36,7 +36,10 @@ node('zlux-jenkins-agent') {
         disableAudit: true,
     )
 
-    pipeline.sonarScan()
+    pipeline.sonarScan(
+        scannerServer: lib.Constants.DEFAULT_SONARQUBE_SERVER,
+        scannerTool:   lib.Constants.DEFAULT_SONARQUBE_SCANNER_TOOL
+    )
     pipeline.build()
     pipeline.test(name: "Unit tests")
     pipeline.publish()
