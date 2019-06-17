@@ -9,12 +9,12 @@ Copyright Contributors to the Zowe Project.
 # zLUX widgets library
 
 Adding the library to your package:
-`npm install "git+ssh://git@github.com:zowe/zlux-widgets.git" --save`
+`npm install @zowe/zlux-widgets --save`
 
 Popup Window
 Imports:  
-Module: `import { ZluxPopupWindowModule } from '@zlux/widgets'`  
-Component: `import { ZluxPopupWindowComponent } from '@zlux/widgets'` template: `<zlux-popup-window>`  
+Module: `import { ZluxPopupWindowModule } from '@zowe/zlux-widgets'`  
+Component: `import { ZluxPopupWindowComponent } from '@zowe/zlux-widgets'` template: `<zlux-popup-window>`  
 Template parameters:
 - header: string
 - dark: boolean - if true - apply dark style to header
@@ -23,8 +23,8 @@ Template parameters:
 
 Popup Window Button Area  
 Imports:  
-Module: `import { ZluxPopupWindowModule } from '@zlux/widgets'`  
-Component: `import { ZluxPopupWindowButtonAreaComponent } from '@zlux/widgets'` template:   `<zlux-popup-window-button-area>`
+Module: `import { ZluxPopupWindowModule } from '@zowe/zlux-widgets'`  
+Component: `import { ZluxPopupWindowButtonAreaComponent } from '@zowe/zlux-widgets'` template:   `<zlux-popup-window-button-area>`
 
 The buttons are rendered in the place corresponding to the style:
 -  "popup-window-button-left"
@@ -33,8 +33,8 @@ The buttons are rendered in the place corresponding to the style:
 
 Button
 Imports:  
-Module: `import { ZluxButtonModule } from '@zlux/widgets'`  
-Component: `import { ZluxButtonComponent } from '@zlux/widgets'` template: `<zlux-button>`  
+Module: `import { ZluxButtonModule } from '@zowe/zlux-widgets'`  
+Component: `import { ZluxButtonComponent } from '@zowe/zlux-widgets'` template: `<zlux-button>`  
 Template parameters:
 - buttonType: string -  attribute "type" of buttons tag
 - label: string
@@ -61,11 +61,8 @@ Example:
   </zlux-popup-window-button-area>
 </zlux-popup-window>
 ```
-# For Maintainers
-Because this library is used as an npm package, you must remember to commit changes to index.js and index.js.map, and any other files that changed as the result of building the application (e.g. **/*.d.ts)
 
-Also, remember to retain the copyright headers in those build products (they currently need to be restored "by hand")
-
+---
 
 This program and the accompanying materials are
 made available under the terms of the Eclipse Public License v2.0 which accompanies
