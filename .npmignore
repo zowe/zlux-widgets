@@ -7,9 +7,28 @@
 # Copyright Contributors to the Zowe Project.
 
 
-# source
+# Jenkins
 /Jenkinsfile
-/zlux-widgets.ppf
+
+
+# SonarQube
+.scannerwork
+sonar-project.properties
+
+# test result
+.nyc_output
+.nycrc
+reports/
+
+
+# dco signoffs
+dco_signoffs
+
+# tests
+test/
+
+# AppScan
+*.ppf
 
 # compiled output
 /tmp
