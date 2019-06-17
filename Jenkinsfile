@@ -41,7 +41,6 @@ node('zlux-jenkins-agent') {
         scannerTool:   lib.Constants.DEFAULT_SONARQUBE_SCANNER_TOOL
     )
     pipeline.build()
-    pipeline.test(name: "Unit tests", junit : "unit-tests-report.xml")
     pipeline.publish()
     pipeline.release()
 
