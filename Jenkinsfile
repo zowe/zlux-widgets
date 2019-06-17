@@ -31,12 +31,13 @@ node('zlux-jenkins-agent') {
         publishRegistry: [
             email                      : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_EMAIL,
             usernamePasswordCredential : lib.Constants.DEFAULT_NPM_PRIVATE_REGISTRY_CREDENTIAL,
-        ]
+        ],
+        disableLint: true
     )
 
     pipeline.sonarScan()
     pipeline.build()
-    pipeline.test(name: "unit tests")
+    pipeline.test(name: "Unit tests")
     pipeline.publish()
     pipeline.release()
 
