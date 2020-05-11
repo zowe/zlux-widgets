@@ -25,6 +25,11 @@
   background-color: rgba(242, 242, 242, 1);
 }
 
+.report.warning.dark {
+  background-color: #24272d;
+  color: #dddee0;
+}
+
 .report.info {
   background-color: rgba(242, 242, 242, 1);
 }
@@ -68,6 +73,10 @@
   background-repeat: no-repeat;
 }
 
+.severityIcon.dark {
+  filter: invert(50%) sepia(50%) saturate(4000%) hue-rotate(0deg); /* ~Zowe support 02 (#e99023) */
+}
+
 .error .leftPanel {
   background-color: rgba(255, 92, 73, 1);
 }
@@ -78,6 +87,10 @@
 
 .warning .leftPanel {
   background-color: rgba(254, 133, 0, 1);
+}
+
+.warning .leftPanel.dark {
+  background-color: #dddee0; /* Zowe cool grey 20 */
 }
 
 .info .leftPanel {
@@ -112,8 +125,8 @@
 }
 
 .warning .title {
-  border-bottom-color: #DB7C00;
-  color: #DB7C00;
+  border-bottom-color: #e99023;
+  color: #e99023;
 }
 
 .info .title {
@@ -126,6 +139,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.zlux-button.dark {
+  background-color: #3975d0;
+  color: #f3f4f4;
 }
 
 .timestamp {
