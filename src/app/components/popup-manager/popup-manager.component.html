@@ -24,6 +24,9 @@
       [timestamp]="currentErrorBlocking.timestamp"
       [buttons]="currentErrorBlocking.buttonCaptions"
       (action)="onChoose(currentErrorBlocking, $event)"
+      [theme]="currentErrorBlocking.theme"
+      [style]="currentErrorBlocking.style"
+      [callToAction]="currentErrorBlocking.callToAction"
     >
       {{currentErrorBlocking.text}}
     </zlux-error-report>
@@ -43,6 +46,9 @@
     [timestamp]="currentErrorNonblocking.timestamp"
     [buttons]="currentErrorNonblocking.buttonCaptions"
     (action)="onChoose(currentErrorNonblocking, $event)"
+    [theme]="currentErrorNonblocking.theme"
+    [style]="currentErrorNonblocking.style"
+    [callToAction]="currentErrorNonblocking.callToAction"
   >
     {{currentErrorNonblocking.text}}
   </zlux-error-report>

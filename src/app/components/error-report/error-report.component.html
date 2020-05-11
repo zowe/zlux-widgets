@@ -10,9 +10,9 @@
   Copyright Contributors to the Zowe Project.
 -->
 
-<div [ngClass]="'report ' + severity">
-  <div ngClass="leftPanel">
-    <div ngClass="severityIcon">
+<div [ngClass]="'report ' + severity + ' ' + theme" [ngStyle]="style">
+  <div [ngClass]="'leftPanel ' + theme">
+    <div [ngClass]="'severityIcon ' + theme">
     </div>
   </div>
   <div ngClass="mainPanel">
@@ -37,7 +37,7 @@
         *ngFor="let button of buttons"
         [label]="button"
         (click)="action.emit(button)"
-        [callToAction]="false"
+        [callToAction]="callToAction || false"
       >
       </zlux-button>
     </div>

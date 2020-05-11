@@ -25,7 +25,10 @@ export interface ErrorReportStruct {
   buttons: string[],
   id: number,
   timestamp: Date,
-  subject: Rx.Subject<any>
+  subject: Rx.Subject<any>,
+  theme?: string,
+  style?: {},
+  callToAction?: boolean
 }
 
 export enum ZluxErrorSeverity {
@@ -113,7 +116,12 @@ export class ZluxPopupManagerService {
   createErrorReport(severity: ZluxErrorSeverity, title: string, text: string, options?: any): ErrorReportStruct {
     options = options || {};
     let buttons = options.buttons || ["Close"];
-    const timestamp: Date = options.timestamp || new Date();
+    let timestamp: Date;
+    if (options.timestamp == false) {
+      timestamp = undefined;
+    } else {
+      timestamp = options.timestamp || new Date();
+    }
 
     buttons = this.processButtons(buttons);
     const subject = new Rx.ReplaySubject();
@@ -126,7 +134,10 @@ export class ZluxPopupManagerService {
       subject,
       timestamp,
       id: getSimpleID(),
-      modal: options.blocking || false
+      modal: options.blocking || false,
+      theme: options.theme || "",
+      style: options.style || {},
+      callToAction: options.callToAction || false
     };
 
     //the object will be shallow cloned

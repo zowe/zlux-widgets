@@ -23,8 +23,11 @@ import { ZluxButtonModule } from '../button/button.component';
 export class ZluxErrorReportComponent {
 	@Input() severity: string = 'error';
   @Input() title: string = '';
+  @Input() theme: string;
+  @Input() style: any = {};
   @Input() buttons: string[] = [];
   @Input() timestamp: Date | undefined = undefined;
+  @Input() callToAction: boolean;
 
   @Output() action: EventEmitter<any> = new EventEmitter<any>();
 
