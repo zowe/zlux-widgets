@@ -34,11 +34,10 @@
       ngClass="buttonArea"
     >
       <zlux-button
-        [ngClass]="theme"
         *ngFor="let button of buttons"
         [label]="button"
         (click)="action.emit(button)"
-        [callToAction]="false"
+        [callToAction]="callToAction || false"
       >
       </zlux-button>
     </div>

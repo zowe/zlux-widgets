@@ -141,11 +141,6 @@
   justify-content: flex-end;
 }
 
-.zlux-button.dark {
-  background-color: #3975d0;
-  color: #f3f4f4;
-}
-
 .timestamp {
   font-size: 12px;
   padding-left: 12px;

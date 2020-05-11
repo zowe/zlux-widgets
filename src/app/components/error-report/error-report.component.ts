@@ -27,6 +27,7 @@ export class ZluxErrorReportComponent {
   @Input() style: any = {};
   @Input() buttons: string[] = [];
   @Input() timestamp: Date | undefined = undefined;
+  @Input() callToAction: boolean;
 
   @Output() action: EventEmitter<any> = new EventEmitter<any>();
 

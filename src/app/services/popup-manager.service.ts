@@ -27,7 +27,8 @@ export interface ErrorReportStruct {
   timestamp: Date,
   subject: Rx.Subject<any>,
   theme?: string,
-  style?: {}
+  style?: {},
+  callToAction?: boolean
 }
 
 export enum ZluxErrorSeverity {
@@ -124,10 +125,6 @@ export class ZluxPopupManagerService {
 
     buttons = this.processButtons(buttons);
     const subject = new Rx.ReplaySubject();
-
-    const theme: string = options.theme || "";
-
-    const style: any = options.style || {};
     
     let errorReport: ErrorReportStruct = {
       severity,
@@ -138,8 +135,9 @@ export class ZluxPopupManagerService {
       timestamp,
       id: getSimpleID(),
       modal: options.blocking || false,
-      theme,
-      style
+      theme: options.theme || "",
+      style: options.style || {},
+      callToAction: options.callToAction || false
     };
 
     //the object will be shallow cloned
