@@ -1,11 +1,14 @@
 {
-  "name": "@zlux/widgets",
+  "name": "@zowe/zlux-widgets",
   "version": "0.0.4",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
-    "build": "webpack --progress --colors",
-    "metadata": "ngc -p tsconfig.ngx-i18n.json",
-    "lint": "ng lint"
+    "start": "npx webpack --progress --colors --watch",
+    "build": "npx webpack --progress --colors",
+    "metadata": "npx ngc -p tsconfig.ngx-i18n.json",
+    "lint": "npx ng lint"
+  },
+  "publishConfig": {
+    "registry": "https://gizaartifactory.jfrog.io/gizaartifactory/api/npm/npm-local-release/"
   },
   "license": "EPL-2.0",
   "dependencies": {
@@ -20,6 +23,7 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "@angular/cli": "~6.1.5",
     "@angular/compiler": "~6.0.9",
     "@angular/compiler-cli": "~6.0.9",
     "@types/node": "~6.0.60",

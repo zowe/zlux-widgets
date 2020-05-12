@@ -1,18 +1,38 @@
 # This program and the accompanying materials are
 # made available under the terms of the Eclipse Public License v2.0 which accompanies
 # this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
-# 
+#
 # SPDX-License-Identifier: EPL-2.0
-# 
+#
 # Copyright Contributors to the Zowe Project.
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+
+# Jenkins
+/Jenkinsfile
+
+
+# SonarQube
+.scannerwork
+sonar-project.properties
+
+# test result
+.nyc_output
+.nycrc
+reports/
+
+
+# dco signoffs
+dco_signoffs
+
+# tests
+test/
+
+# AppScan
+*.ppf
 
 # compiled output
-/web
 /tmp
 /out_tsc
-/services
-/components
 
 # dependencies
 /node_modules
@@ -54,7 +74,7 @@ Thumbs.db
 # This program and the accompanying materials are
 # made available under the terms of the Eclipse Public License v2.0 which accompanies
 # this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
-# 
+#
 # SPDX-License-Identifier: EPL-2.0
-# 
+#
 # Copyright Contributors to the Zowe Project.
