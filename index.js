@@ -248,6 +248,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* unused harmony export __values */
 /* unused harmony export __read */
 /* unused harmony export __spread */
+/* unused harmony export __spreadArrays */
 /* unused harmony export __await */
 /* unused harmony export __asyncGenerator */
 /* unused harmony export __asyncDelegator */
@@ -255,19 +256,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* unused harmony export __makeTemplateObject */
 /* unused harmony export __importStar */
 /* unused harmony export __importDefault */
+/* unused harmony export __classPrivateFieldGet */
+/* unused harmony export __classPrivateFieldSet */
 /*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) Microsoft Corporation.
 
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
 
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 /* global Reflect, Promise */
 
@@ -300,8 +303,10 @@ function __rest(s, e) {
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
         t[p] = s[p];
     if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-            t[p[i]] = s[p[i]];
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
     return t;
 }
 
@@ -321,10 +326,11 @@ function __metadata(metadataKey, metadataValue) {
 }
 
 function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 }
@@ -357,19 +363,30 @@ function __generator(thisArg, body) {
     }
 }
 
+const __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+/* unused harmony export __createBinding */
+
+
 function __exportStar(m, exports) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
 }
 
 function __values(o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
-    return {
+    if (o && typeof o.length === "number") return {
         next: function () {
             if (o && i >= o.length) o = void 0;
             return { value: o && o[i++], done: !o };
         }
     };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 }
 
 function __read(o, n) {
@@ -394,6 +411,14 @@ function __spread() {
         ar = ar.concat(__read(arguments[i]));
     return ar;
 }
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 
 function __await(v) {
     return this instanceof __await ? (this.v = v, this) : new __await(v);
@@ -430,16 +455,37 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 };
 
+const __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
 function __importStar(mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
     return result;
 }
 
 function __importDefault(mod) {
     return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
 }
 
 
@@ -2824,7 +2870,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         ZluxPopupManagerService.prototype.createErrorReport = function (severity, title, text, options) {
             options = options || {};
             var buttons = options.buttons || ["Close"];
-            var timestamp = options.timestamp || new Date();
+            var timestamp;
+            if (options.timestamp == false) {
+                timestamp = undefined;
+            }
+            else {
+                timestamp = options.timestamp || new Date();
+            }
             buttons = this.processButtons(buttons);
             var subject = new Rx.ReplaySubject();
             var errorReport = {
@@ -2835,7 +2887,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
                 subject: subject,
                 timestamp: timestamp,
                 id: getSimpleID(),
-                modal: options.blocking || false
+                modal: options.blocking || false,
+                theme: options.theme || "",
+                style: options.style || {},
+                callToAction: options.callToAction || false
             };
             //the object will be shallow cloned
             this.broadcast('createReport', errorReport);
@@ -8568,6 +8623,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         function ZluxErrorReportComponent() {
             this.severity = 'error';
             this.title = '';
+            this.style = {};
             this.buttons = [];
             this.timestamp = undefined;
             this.action = new core_1.EventEmitter();
@@ -8582,12 +8638,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         ], ZluxErrorReportComponent.prototype, "title", void 0);
         __decorate([
             core_1.Input(),
+            __metadata("design:type", String)
+        ], ZluxErrorReportComponent.prototype, "theme", void 0);
+        __decorate([
+            core_1.Input(),
+            __metadata("design:type", Object)
+        ], ZluxErrorReportComponent.prototype, "style", void 0);
+        __decorate([
+            core_1.Input(),
             __metadata("design:type", Array)
         ], ZluxErrorReportComponent.prototype, "buttons", void 0);
         __decorate([
             core_1.Input(),
             __metadata("design:type", Date)
         ], ZluxErrorReportComponent.prototype, "timestamp", void 0);
+        __decorate([
+            core_1.Input(),
+            __metadata("design:type", Boolean)
+        ], ZluxErrorReportComponent.prototype, "callToAction", void 0);
         __decorate([
             core_1.Output(),
             __metadata("design:type", core_1.EventEmitter)
@@ -23089,7 +23157,7 @@ exports.push([module.i, "\r\n\r\n/*\r\n  This program and the accompanying mater
 /* 498 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n<div [ngClass]=\"'report ' + severity\">\r\n  <div ngClass=\"leftPanel\">\r\n    <div ngClass=\"severityIcon\">\r\n    </div>\r\n  </div>\r\n  <div ngClass=\"mainPanel\">\r\n    <div ngClass=\"title\">\r\n      <div ngClass=\"titleText\">\r\n        {{title}}\r\n      </div>\r\n      <div *ngIf=\"timestamp\" class=\"timestamp\">\r\n        {{timestamp.toLocaleString()}}\r\n      </div>\r\n    </div>\r\n\r\n    <div ngClass=\"content\">\r\n      <ng-content>\r\n      </ng-content>\r\n    </div>\r\n    <div\r\n      *ngIf=\"buttons.length > 0\"\r\n      ngClass=\"buttonArea\"\r\n    >\r\n      <zlux-button\r\n        *ngFor=\"let button of buttons\"\r\n        [label]=\"button\"\r\n        (click)=\"action.emit(button)\"\r\n        [callToAction]=\"false\"\r\n      >\r\n      </zlux-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n";
+module.exports = "\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n<div [ngClass]=\"'report ' + severity + ' ' + theme\" [ngStyle]=\"style\">\r\n  <div [ngClass]=\"'leftPanel ' + theme\">\r\n    <div [ngClass]=\"'severityIcon ' + theme\">\r\n    </div>\r\n  </div>\r\n  <div ngClass=\"mainPanel\">\r\n    <div ngClass=\"title\">\r\n      <div ngClass=\"titleText\">\r\n        {{title}}\r\n      </div>\r\n      <div *ngIf=\"timestamp\" class=\"timestamp\">\r\n        {{timestamp.toLocaleString()}}\r\n      </div>\r\n    </div>\r\n\r\n    <div ngClass=\"content\">\r\n      <ng-content>\r\n      </ng-content>\r\n    </div>\r\n    <div\r\n      *ngIf=\"buttons.length > 0\"\r\n      ngClass=\"buttonArea\"\r\n    >\r\n      <zlux-button\r\n        *ngFor=\"let button of buttons\"\r\n        [label]=\"button\"\r\n        (click)=\"action.emit(button)\"\r\n        [callToAction]=\"callToAction || false\"\r\n      >\r\n      </zlux-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n";
 
 /***/ }),
 /* 499 */
@@ -23118,7 +23186,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.report {\r\n  padding: 0;\r\n  border-left: none;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.report.error {\r\n  background-color: rgba(247, 230, 230, 1);\r\n}\r\n\r\n.report.warning {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.report.info {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.leftPanel {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.mainPanel {\r\n  padding: 10px 20px;\r\n  flex-grow: 1;\r\n}\r\n\r\n.error .mainPanel {\r\n  border: rgba(255, 92, 73, 1) 1px solid;\r\n}\r\n\r\n.warning .mainPanel {\r\n  border: rgba(254, 133, 0, 1) 1px solid;\r\n}\r\n\r\n.info .mainPanel {\r\n  border: rgba(0, 182, 203, 1) 1px solid;\r\n}\r\n\r\n.content {\r\n  margin-top: 16px;\r\n  padding: 5px;\r\n  padding-bottom: 0;\r\n  user-select: text;\r\n  -ms-user-select: text;\r\n  -moz-user-select: text;\r\n  -webkit-user-select: text;\r\n}\r\n\r\n.severityIcon {\r\n  width: 32px;\r\n  height: 32px;\r\n  margin: 16px;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.error .leftPanel {\r\n  background-color: rgba(255, 92, 73, 1);\r\n}\r\n\r\n.error .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(501)) + ");\r\n}\r\n\r\n.warning .leftPanel {\r\n  background-color: rgba(254, 133, 0, 1);\r\n}\r\n\r\n.info .leftPanel {\r\n  background-color: rgba(0, 182, 203, 1);\r\n}\r\n\r\n.warning .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(502)) + ");\r\n}\r\n\r\n.info .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(503)) + ");\r\n}\r\n\r\n.title {\r\n  border-bottom: 1px solid;\r\n  font-kerning: normal;\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: space-between;\r\n  align-items: flex-end;\r\n}\r\n\r\n.titleText {\r\n  font-size: 150%;\r\n  font-size:21px;\r\n}\r\n\r\n.error .title {\r\n  border-bottom-color: #AA231F;\r\n  color: #AA231F;\r\n}\r\n\r\n.warning .title {\r\n  border-bottom-color: #DB7C00;\r\n  color: #DB7C00;\r\n}\r\n\r\n.info .title {\r\n  border-bottom-color: #188291;\r\n  color: #188291;\r\n}\r\n\r\n.buttonArea {\r\n  margin: 36px 10px 0px 10px;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: flex-end;\r\n}\r\n\r\n.timestamp {\r\n  font-size: 12px;\r\n  padding-left: 12px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", ""]);
+exports.push([module.i, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.report {\r\n  padding: 0;\r\n  border-left: none;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.report.error {\r\n  background-color: rgba(247, 230, 230, 1);\r\n}\r\n\r\n.report.warning {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.report.warning.dark {\r\n  background-color: #24272d;\r\n  color: #dddee0;\r\n}\r\n\r\n.report.info {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.leftPanel {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.mainPanel {\r\n  padding: 10px 20px;\r\n  flex-grow: 1;\r\n}\r\n\r\n.error .mainPanel {\r\n  border: rgba(255, 92, 73, 1) 1px solid;\r\n}\r\n\r\n.warning .mainPanel {\r\n  border: rgba(254, 133, 0, 1) 1px solid;\r\n}\r\n\r\n.info .mainPanel {\r\n  border: rgba(0, 182, 203, 1) 1px solid;\r\n}\r\n\r\n.content {\r\n  margin-top: 16px;\r\n  padding: 5px;\r\n  padding-bottom: 0;\r\n  user-select: text;\r\n  -ms-user-select: text;\r\n  -moz-user-select: text;\r\n  -webkit-user-select: text;\r\n}\r\n\r\n.severityIcon {\r\n  width: 32px;\r\n  height: 32px;\r\n  margin: 16px;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.severityIcon.dark {\r\n  filter: invert(50%) sepia(50%) saturate(4000%) hue-rotate(0deg); /* ~Zowe support 02 (#e99023) */\r\n}\r\n\r\n.error .leftPanel {\r\n  background-color: rgba(255, 92, 73, 1);\r\n}\r\n\r\n.error .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(501)) + ");\r\n}\r\n\r\n.warning .leftPanel {\r\n  background-color: rgba(254, 133, 0, 1);\r\n}\r\n\r\n.warning .leftPanel.dark {\r\n  background-color: #dddee0; /* Zowe cool grey 20 */\r\n}\r\n\r\n.info .leftPanel {\r\n  background-color: rgba(0, 182, 203, 1);\r\n}\r\n\r\n.warning .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(502)) + ");\r\n}\r\n\r\n.info .severityIcon {\r\n  background-image: url(" + escape(__webpack_require__(503)) + ");\r\n}\r\n\r\n.title {\r\n  border-bottom: 1px solid;\r\n  font-kerning: normal;\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: space-between;\r\n  align-items: flex-end;\r\n}\r\n\r\n.titleText {\r\n  font-size: 150%;\r\n  font-size:21px;\r\n}\r\n\r\n.error .title {\r\n  border-bottom-color: #AA231F;\r\n  color: #AA231F;\r\n}\r\n\r\n.warning .title {\r\n  border-bottom-color: #e99023;\r\n  color: #e99023;\r\n}\r\n\r\n.info .title {\r\n  border-bottom-color: #188291;\r\n  color: #188291;\r\n}\r\n\r\n.buttonArea {\r\n  margin: 36px 10px 0px 10px;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: flex-end;\r\n}\r\n\r\n.timestamp {\r\n  font-size: 12px;\r\n  padding-left: 12px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", ""]);
 
 // exports
 
@@ -23145,7 +23213,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz
 /* 504 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n<div *ngIf=\"blockCount > 0\" ngClass=\"popup-shadow-hover\">\r\n  <zlux-popup-panel\r\n    *ngIf=\"currentErrorBlocking\"\r\n    [modal]=\"false\"\r\n    [autoShow]=\"true\"\r\n    [ignoreVeil]=\"true\"\r\n    ngClass=\"attachToCenter\"\r\n  >\r\n    <zlux-error-report\r\n      [severity]=\"currentErrorBlocking.severity\"\r\n      [title]=\"currentErrorBlocking.title\"\r\n      [timestamp]=\"currentErrorBlocking.timestamp\"\r\n      [buttons]=\"currentErrorBlocking.buttonCaptions\"\r\n      (action)=\"onChoose(currentErrorBlocking, $event)\"\r\n    >\r\n      {{currentErrorBlocking.text}}\r\n    </zlux-error-report>\r\n  </zlux-popup-panel>\r\n\r\n</div>\r\n<zlux-popup-panel\r\n  *ngIf=\"currentErrorNonblocking\"\r\n  [modal]=\"false\"\r\n  [autoShow]=\"true\"\r\n  [blockDisplay]=\"true\"\r\n  ngClass=\"attachToCorner\"\r\n>\r\n  <zlux-error-report\r\n    [severity]=\"currentErrorNonblocking.severity\"\r\n    [title]=\"currentErrorNonblocking.title\"\r\n    [timestamp]=\"currentErrorNonblocking.timestamp\"\r\n    [buttons]=\"currentErrorNonblocking.buttonCaptions\"\r\n    (action)=\"onChoose(currentErrorNonblocking, $event)\"\r\n  >\r\n    {{currentErrorNonblocking.text}}\r\n  </zlux-error-report>\r\n</zlux-popup-panel>\r\n\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n";
+module.exports = "\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n<div *ngIf=\"blockCount > 0\" ngClass=\"popup-shadow-hover\">\r\n  <zlux-popup-panel\r\n    *ngIf=\"currentErrorBlocking\"\r\n    [modal]=\"false\"\r\n    [autoShow]=\"true\"\r\n    [ignoreVeil]=\"true\"\r\n    ngClass=\"attachToCenter\"\r\n  >\r\n    <zlux-error-report\r\n      [severity]=\"currentErrorBlocking.severity\"\r\n      [title]=\"currentErrorBlocking.title\"\r\n      [timestamp]=\"currentErrorBlocking.timestamp\"\r\n      [buttons]=\"currentErrorBlocking.buttonCaptions\"\r\n      (action)=\"onChoose(currentErrorBlocking, $event)\"\r\n      [theme]=\"currentErrorBlocking.theme\"\r\n      [style]=\"currentErrorBlocking.style\"\r\n      [callToAction]=\"currentErrorBlocking.callToAction\"\r\n    >\r\n      {{currentErrorBlocking.text}}\r\n    </zlux-error-report>\r\n  </zlux-popup-panel>\r\n\r\n</div>\r\n<zlux-popup-panel\r\n  *ngIf=\"currentErrorNonblocking\"\r\n  [modal]=\"false\"\r\n  [autoShow]=\"true\"\r\n  [blockDisplay]=\"true\"\r\n  ngClass=\"attachToCorner\"\r\n>\r\n  <zlux-error-report\r\n    [severity]=\"currentErrorNonblocking.severity\"\r\n    [title]=\"currentErrorNonblocking.title\"\r\n    [timestamp]=\"currentErrorNonblocking.timestamp\"\r\n    [buttons]=\"currentErrorNonblocking.buttonCaptions\"\r\n    (action)=\"onChoose(currentErrorNonblocking, $event)\"\r\n    [theme]=\"currentErrorNonblocking.theme\"\r\n    [style]=\"currentErrorNonblocking.style\"\r\n    [callToAction]=\"currentErrorNonblocking.callToAction\"\r\n  >\r\n    {{currentErrorNonblocking.text}}\r\n  </zlux-error-report>\r\n</zlux-popup-panel>\r\n\r\n\r\n<!-- \r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n-->\r\n\r\n";
 
 /***/ }),
 /* 505 */

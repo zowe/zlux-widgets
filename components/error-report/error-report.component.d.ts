@@ -10,18 +10,21 @@
   Copyright Contributors to the Zowe Project.
 */
 
+
 import { EventEmitter } from '@angular/core';
 export declare class ZluxErrorReportComponent {
     severity: string;
     title: string;
+    theme: string;
+    style: any;
     buttons: string[];
     timestamp: Date | undefined;
+    callToAction: boolean;
     action: EventEmitter<any>;
     constructor();
 }
 export declare class ZluxErrorReportModule {
 }
-
 
 /*
   This program and the accompanying materials are
