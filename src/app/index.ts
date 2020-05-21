@@ -21,6 +21,7 @@ export { ZluxPopupManagerService, ZluxErrorSeverity } from './services/popup-man
 export { ZluxPaginatorModule, ZluxPaginatorComponent } from './components/paginator/paginator.component';
 export { ZluxFlyoverModule, ZluxFlyoverComponent } from './components/flyover/flyover.component';
 export { ZluxErrorReportModule, ZluxErrorReportComponent } from './components/error-report/error-report.component';
+export { ZluxTabbingComponent, ZluxTabbingModule } from './components/tabbing/tabbing.component'
 
 
 /*
