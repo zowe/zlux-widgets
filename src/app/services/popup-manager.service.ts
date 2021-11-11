@@ -11,7 +11,7 @@
 */
 
 import { Injectable } from '@angular/core';
-import * as Rx from 'rxjs/Rx';
+import { Observable, ReplaySubject, Subject } from 'rxjs';
 
 function getSimpleID() {
   return Number(Math.random() + Date.now());
@@ -25,7 +25,7 @@ export interface ErrorReportStruct {
   buttons: string[],
   id: number,
   timestamp: Date,
-  subject: Rx.Subject<any>,
+  subject: Subject<any>,
   theme?: string,
   style?: {},
   callToAction?: boolean
@@ -39,16 +39,16 @@ export enum ZluxErrorSeverity {
 
 @Injectable()
 export class ZluxPopupManagerService {
-  eventsSubject: any;
+  eventsSubject: Subject<any>;
   listeners: any;
   events: any;
   logger: any = undefined;
 
   constructor() {
     this.listeners = {};
-    this.eventsSubject = new Rx.Subject();
+    this.eventsSubject = new Subject<any>();
 
-    this.events = Rx.Observable.from(this.eventsSubject);
+    this.events = this.eventsSubject.asObservable();
 
     this.events.subscribe(
       ({name, args}) => {
@@ -124,7 +124,7 @@ export class ZluxPopupManagerService {
     }
 
     buttons = this.processButtons(buttons);
-    const subject = new Rx.ReplaySubject();
+    const subject = new ReplaySubject();
     
     let errorReport: ErrorReportStruct = {
       severity,
@@ -150,14 +150,14 @@ export class ZluxPopupManagerService {
     return errorReport;
   }
 
-  reportError(severity: ZluxErrorSeverity, title: string, text: string, options?: any): Rx.Observable<any> {
+  reportError(severity: ZluxErrorSeverity, title: string, text: string, options?: any): Observable<any> {
     options = options || {};
     let buttons = options.buttons || ["Close"];
     const timestamp: Date = options.timestamp || new Date();
 
     buttons = this.processButtons(buttons);
 
-    const subject = new Rx.ReplaySubject();
+    const subject = new ReplaySubject();
     this.broadcast('createReport', {
       severity,
       title,

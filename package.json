@@ -16,7 +16,6 @@
     "@angular/platform-browser": "~6.0.9",
     "@angular/router": "~6.0.9",
     "rxjs": "~6.2.2",
-    "rxjs-compat": "~6.2.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
