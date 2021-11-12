@@ -35,13 +35,13 @@ export declare class ZluxFlyoverComponent implements OnInit {
     onMouseEnter(e: Event): void;
     onMouseLeave(e: Event): void;
     show(onElement: any, onPosition?: 'top' | 'bottom' | 'left' | 'right'): void;
-    private GetRelativeShift(onEl, content);
-    private setTopPosition(onEl);
-    private setBottomPosition(onEl);
-    private horizontalAlign(onEl, rect);
-    private setLeftPosition(onEl);
-    private setRightPosition(onEl);
-    private verticalAlign(onEl, rect);
+    private GetRelativeShift;
+    private setTopPosition;
+    private setBottomPosition;
+    private horizontalAlign;
+    private setLeftPosition;
+    private setRightPosition;
+    private verticalAlign;
     hide(): void;
     forceHide(): void;
 }

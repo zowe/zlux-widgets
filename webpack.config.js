@@ -12,7 +12,8 @@
 
 var webpack = require('webpack');
 var path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+//const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 
@@ -40,6 +41,7 @@ var config = {
     rules: [
       {
         test: /\.ts$/,
+        exclude: /node_modules/,
         loaders: [
           'ts-loader',
           'angular2-template-loader'
@@ -64,12 +66,12 @@ var config = {
       {
         test: /\.css$/,
         exclude: root('./src/app'),
-        loader: ExtractTextPlugin.extract({ use: 'css-loader?sourceMap', fallback: 'style-loader' })
+        use: [MiniCssExtractPlugin.loader, "style-loader"],
       },
       {
         test: /\.css$/,
         include: root('./src/app/assets/css'),
-        loader: 'style-loader!css-loader'
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.css$/,
@@ -85,7 +87,7 @@ var config = {
     extensions: [".js", ".ts"]
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new MiniCssExtractPlugin({filename: "styles.css"}),
     new webpack.WatchIgnorePlugin([
       /\.js$/,
       /\.d\.ts$/

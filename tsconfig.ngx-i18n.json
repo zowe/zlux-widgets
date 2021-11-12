@@ -19,10 +19,12 @@
       "dom"
     ],
     "paths": {
-    }
+    },
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "skipMetadataEmit" : false,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
+    "enableIvy": false
   }
 }

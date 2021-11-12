@@ -15,7 +15,7 @@ export interface ErrorReportStruct {
 export declare enum ZluxErrorSeverity {
     ERROR = "error",
     WARNING = "warning",
-    INFO = "info",
+    INFO = "info"
 }
 export declare class ZluxPopupManagerService {
     eventsSubject: Subject<any>;
