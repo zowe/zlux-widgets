@@ -9,9 +9,6 @@
 */
 
 import { EventEmitter, OnChanges, SimpleChanges } from "@angular/core";
-import '../../assets/images/FirstPage.svg';
-import '../../assets/images/NextPage.svg';
-import '../../assets/images/PrevPage.svg';
 export declare class ZluxPaginatorComponent implements OnChanges {
     rows: number;
     totalRecords: number;
