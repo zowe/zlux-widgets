@@ -10,12 +10,10 @@
   Copyright Contributors to the Zowe Project.
 */
 
-var webpack = require('webpack');
-var path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin-next');
-const { AngularWebpackPlugin } =  require('@ngtools/webpack');
 
 
 function root(__path) {
@@ -53,7 +51,12 @@ var config = {
       },
       {
         test: /\.html$/,
-        use: [ 'html-loader' ]
+        use: [{
+          loader: 'html-loader',
+          options: {
+            esModule: false
+          }
+        }]
       },
       {
         test: /\.svg$/,
@@ -66,13 +69,8 @@ var config = {
       },
       {
         test: /\.css$/,
-        exclude: root('./src/app'),
-        use: [MiniCssExtractPlugin.loader, "style-loader"],
-      },
-      {
-        test: /\.css$/,
         include: root('./src/app/assets/css'),
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.css$/,
@@ -88,7 +86,6 @@ var config = {
     extensions: ['.js', '.ts']
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: "styles.css" }),
     new webpack.WatchIgnorePlugin({
       paths: [/\.js$/, /\.d\.ts$/]
     }),
