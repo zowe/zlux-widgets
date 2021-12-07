@@ -12,9 +12,11 @@
 
 var webpack = require('webpack');
 var path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin-next');
+const { AngularWebpackPlugin } =  require('@ngtools/webpack');
+
 
 function root(__path) {
   return path.join(__dirname, __path);
@@ -26,7 +28,7 @@ var config = {
   mode: 'development',
   output: {
     path: root('.'),
-    filename: 'dist/index.js',
+    filename: './dist/index.js',
     library: '@zlux/widgets',
     libraryTarget: 'amd',
     umdNamedDefine: true
@@ -51,9 +53,7 @@ var config = {
       },
       {
         test: /\.html$/,
-        use: [
-          'html-loader'
-        ]
+        use: [ 'html-loader' ]
       },
       {
         test: /\.svg$/,
@@ -77,18 +77,15 @@ var config = {
       {
         test: /\.css$/,
         include: root('./src/app/components'),
-        use: [
-          'css-to-string-loader',
-          'css-loader'
-        ]
+        use: ['to-string-loader', 'css-loader']
       }
     ]
   },
   resolve: {
     modules: [
-      "node_modules"
+      'node_modules'
     ],
-    extensions: [".js", ".ts"]
+    extensions: ['.js', '.ts']
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "styles.css" }),
