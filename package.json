@@ -5,7 +5,7 @@
     "start": "webpack --progress --color --watch",
     "build": "webpack --progress --color",
     "metadata": "ngc -p tsconfig.ngx-i18n.json",
-    "lint": "tslint -p ./tsconfig.json"
+    "lint": "tslint -p ./tsconfig.json -c ./tslint.json"
   },
   "license": "EPL-2.0",
   "main": "dist/index.js",
