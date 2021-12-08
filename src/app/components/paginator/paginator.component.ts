@@ -17,9 +17,6 @@ import { FormsModule } from '@angular/forms';
 import { ZluxButtonModule } from '../button/button.component';
 import { ZluxInputTextModule } from '../inputtext/inputtext';
 import { ZluxFlyoverModule } from '../flyover/flyover.component';
-import '../../assets/images/FirstPage.svg';
-import '../../assets/images/NextPage.svg';
-import '../../assets/images/PrevPage.svg';
 
 @Component({
   selector: "zlux-paginator",
