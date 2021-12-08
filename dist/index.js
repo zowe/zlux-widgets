@@ -28,296 +28,202 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the a
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/button/button.component.css":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/button/button.component.css ***!
-  \**********************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/button/button.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/button/button.component.css ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  margin: 0 0.5rem;\r\n  display: inline-block;\r\n}\r\n\r\n.zlux-button {\r\n  background-color: transparent;\r\n  border: 1px solid #047cc0;\r\n  border-radius: 2px;\r\n  font-size: 14px;\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n  color: #047cc0;\r\n  width: 100%;\r\n  height: 2rem;\r\n  padding: 0 1rem;\r\n}\r\n\r\n.zlux-action-button {\r\n  background-color: #047cc0;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:hover:not([disabled]) {\r\n  background-color: #175d8d;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:active:not([disabled]) {\r\n  background-color: #1c496d;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:disabled {\r\n  opacity: 0.6;\r\n}\r\n\r\n.zlux-button.light {\r\n  border-color: #98c4eb;\r\n  color: #98c4eb;\r\n}\r\n\r\n.zlux-button.light:hover:not([disabled]) {\r\n  background-color: #5fa8e0;\r\n  color: #464646;\r\n}\r\n\r\n.zlux-button.light:active:not([disabled]) {\r\n  background-color: #2e96d5;\r\n  color: #464646;\r\n}\r\n\r\n.zlux-action-button.light {\r\n  background-color: #98c4eb;\r\n  color: #464646;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/button/button.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA;EACE,6BAA6B;EAC7B,yBAAyB;EACzB,kBAAkB;EAClB,eAAe;EACf,mEAAmE;EACnE,cAAc;EACd,WAAW;EACX,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,qBAAqB;EACrB,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  margin: 0 0.5rem;\r\n  display: inline-block;\r\n}\r\n\r\n.zlux-button {\r\n  background-color: transparent;\r\n  border: 1px solid #047cc0;\r\n  border-radius: 2px;\r\n  font-size: 14px;\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n  color: #047cc0;\r\n  width: 100%;\r\n  height: 2rem;\r\n  padding: 0 1rem;\r\n}\r\n\r\n.zlux-action-button {\r\n  background-color: #047cc0;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:hover:not([disabled]) {\r\n  background-color: #175d8d;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:active:not([disabled]) {\r\n  background-color: #1c496d;\r\n  color: #f6f6f6;\r\n}\r\n\r\n.zlux-button:disabled {\r\n  opacity: 0.6;\r\n}\r\n\r\n.zlux-button.light {\r\n  border-color: #98c4eb;\r\n  color: #98c4eb;\r\n}\r\n\r\n.zlux-button.light:hover:not([disabled]) {\r\n  background-color: #5fa8e0;\r\n  color: #464646;\r\n}\r\n\r\n.zlux-button.light:active:not([disabled]) {\r\n  background-color: #2e96d5;\r\n  color: #464646;\r\n}\r\n\r\n.zlux-action-button.light {\r\n  background-color: #98c4eb;\r\n  color: #464646;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/checkbox/checkbox.component.css":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/checkbox/checkbox.component.css ***!
-  \**************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/checkbox/checkbox.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/checkbox/checkbox.component.css ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.checkbox-area {\r\n  position: relative;\r\n  padding-left: 30px;\r\n  white-space: nowrap;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n  display: none;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label {\r\n  color: #5fa8e0;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span {\r\n    display:inline-block;\r\n    width:16px;\r\n    height:16px;\r\n    border: 1px solid #047cc0;\r\n    border-radius: 2px;\r\n    padding: 2px;\r\n    margin-right: 1em;\r\n    vertical-align:middle;\r\n    background: transparent;\r\n    cursor: pointer;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span.checkbox-dark {\r\n    border: 1px solid #56acf2;\r\n}\r\n\r\ninput[type=\"checkbox\"]:hover:not(:disabled) + label span {\r\n  border: 1px solid #175d8d;\r\n  background-color: #C0BFC0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:hover:not(:disabled) + label span.checkbox-dark {\r\n  border: 1px solid #009bef;\r\n  background-color: rgb(69, 70, 70);\r\n}\r\n\r\ninput[type=\"checkbox\"]:active:not(:disabled) + label span {\r\n  border: 1px solid #1c496d;\r\n  background-color: #777677;\r\n}\r\n\r\ninput[type=\"checkbox\"]:active:not(:disabled) + label span.checkbox-dark {\r\n  border: 1px solid #047cc0;\r\n  background-color: rgb(51, 51, 52);\r\n}\r\n\r\ninput[type=\"checkbox\"]:disabled + label span {\r\n  opacity: 0.6;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span img{\r\n  position: absolute;\r\n  display: none;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span {\r\n    background-color: #047cc0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span.checkbox-dark {\r\n    background-color: #56acf2;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:hover:not(:disabled) + label span {\r\n    background-color: #175d8d;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:hover:not(:disabled) + label span.checkbox-dark {\r\n    background-color: #009bef;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:active:not(:disabled) + label span {\r\n    background-color: #1c496d;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:active:not(:disabled) + label span.checkbox-dark {\r\n    background-color: #047cc0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span img{\r\n  display: inline;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/checkbox/checkbox.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,cAAc;AAChB;;AAEA;IACI,oBAAoB;IACpB,UAAU;IACV,WAAW;IACX,yBAAyB;IACzB,kBAAkB;IAClB,YAAY;IACZ,iBAAiB;IACjB,qBAAqB;IACrB,uBAAuB;IACvB,eAAe;AACnB;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;EACE,yBAAyB;EACzB,yBAAyB;AAC3B;;AAEA;EACE,yBAAyB;EACzB,iCAAiC;AACnC;;AAEA;EACE,yBAAyB;EACzB,yBAAyB;AAC3B;;AAEA;EACE,yBAAyB;EACzB,iCAAiC;AACnC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;AAC7B;;AAEA;EACE,eAAe;AACjB;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.checkbox-area {\r\n  position: relative;\r\n  padding-left: 30px;\r\n  white-space: nowrap;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n  display: none;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label {\r\n  color: #5fa8e0;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span {\r\n    display:inline-block;\r\n    width:16px;\r\n    height:16px;\r\n    border: 1px solid #047cc0;\r\n    border-radius: 2px;\r\n    padding: 2px;\r\n    margin-right: 1em;\r\n    vertical-align:middle;\r\n    background: transparent;\r\n    cursor: pointer;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span.checkbox-dark {\r\n    border: 1px solid #56acf2;\r\n}\r\n\r\ninput[type=\"checkbox\"]:hover:not(:disabled) + label span {\r\n  border: 1px solid #175d8d;\r\n  background-color: #C0BFC0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:hover:not(:disabled) + label span.checkbox-dark {\r\n  border: 1px solid #009bef;\r\n  background-color: rgb(69, 70, 70);\r\n}\r\n\r\ninput[type=\"checkbox\"]:active:not(:disabled) + label span {\r\n  border: 1px solid #1c496d;\r\n  background-color: #777677;\r\n}\r\n\r\ninput[type=\"checkbox\"]:active:not(:disabled) + label span.checkbox-dark {\r\n  border: 1px solid #047cc0;\r\n  background-color: rgb(51, 51, 52);\r\n}\r\n\r\ninput[type=\"checkbox\"]:disabled + label span {\r\n  opacity: 0.6;\r\n}\r\n\r\ninput[type=\"checkbox\"] + label span img{\r\n  position: absolute;\r\n  display: none;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span {\r\n    background-color: #047cc0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span.checkbox-dark {\r\n    background-color: #56acf2;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:hover:not(:disabled) + label span {\r\n    background-color: #175d8d;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:hover:not(:disabled) + label span.checkbox-dark {\r\n    background-color: #009bef;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:active:not(:disabled) + label span {\r\n    background-color: #1c496d;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked:active:not(:disabled) + label span.checkbox-dark {\r\n    background-color: #047cc0;\r\n}\r\n\r\ninput[type=\"checkbox\"]:checked + label span img{\r\n  display: inline;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/error-report/error-report.component.css":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/error-report/error-report.component.css ***!
-  \**********************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/error-report/error-report.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/error-report/error-report.component.css ***!
+  \********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
-
-
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/error-critical.png */ "./src/app/assets/images/error-critical.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/error-warning.png */ "./src/app/assets/images/error-warning.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/info.png */ "./src/app/assets/images/info.png"), __webpack_require__.b);
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../assets/images/error-critical.png */ "./src/app/assets/images/error-critical.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../assets/images/error-warning.png */ "./src/app/assets/images/error-warning.png");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../../assets/images/info.png */ "./src/app/assets/images/info.png");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.report {\r\n  padding: 0;\r\n  border-left: none;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.report.error {\r\n  background-color: rgba(247, 230, 230, 1);\r\n}\r\n\r\n.report.warning {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.report.warning.dark {\r\n  background-color: #24272d;\r\n  color: #dddee0;\r\n}\r\n\r\n.report.info {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.leftPanel {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.mainPanel {\r\n  padding: 10px 20px;\r\n  flex-grow: 1;\r\n}\r\n\r\n.error .mainPanel {\r\n  border: rgba(255, 92, 73, 1) 1px solid;\r\n}\r\n\r\n.warning .mainPanel {\r\n  border: rgba(254, 133, 0, 1) 1px solid;\r\n}\r\n\r\n.info .mainPanel {\r\n  border: rgba(0, 182, 203, 1) 1px solid;\r\n}\r\n\r\n.content {\r\n  margin-top: 16px;\r\n  padding: 5px;\r\n  padding-bottom: 0;\r\n  user-select: text;\r\n  -ms-user-select: text;\r\n  -moz-user-select: text;\r\n  -webkit-user-select: text;\r\n}\r\n\r\n.severityIcon {\r\n  width: 32px;\r\n  height: 32px;\r\n  margin: 16px;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.severityIcon.dark {\r\n  filter: invert(50%) sepia(50%) saturate(4000%) hue-rotate(0deg); /* ~Zowe support 02 (#e99023) */\r\n}\r\n\r\n.error .leftPanel {\r\n  background-color: rgba(255, 92, 73, 1);\r\n}\r\n\r\n.error .severityIcon {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n\r\n.warning .leftPanel {\r\n  background-color: rgba(254, 133, 0, 1);\r\n}\r\n\r\n.warning .leftPanel.dark {\r\n  background-color: #dddee0; /* Zowe cool grey 20 */\r\n}\r\n\r\n.info .leftPanel {\r\n  background-color: rgba(0, 182, 203, 1);\r\n}\r\n\r\n.warning .severityIcon {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n}\r\n\r\n.info .severityIcon {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\r\n}\r\n\r\n.title {\r\n  border-bottom: 1px solid;\r\n  font-kerning: normal;\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: space-between;\r\n  align-items: flex-end;\r\n}\r\n\r\n.titleText {\r\n  font-size: 150%;\r\n  font-size:21px;\r\n}\r\n\r\n.error .title {\r\n  border-bottom-color: #AA231F;\r\n  color: #AA231F;\r\n}\r\n\r\n.warning .title {\r\n  border-bottom-color: #e99023;\r\n  color: #e99023;\r\n}\r\n\r\n.info .title {\r\n  border-bottom-color: #188291;\r\n  color: #188291;\r\n}\r\n\r\n.buttonArea {\r\n  margin: 36px 10px 0px 10px;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: flex-end;\r\n}\r\n\r\n.timestamp {\r\n  font-size: 12px;\r\n  padding-left: 12px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/error-report/error-report.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,UAAU;EACV,iBAAiB;EACjB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,wCAAwC;AAC1C;;AAEA;EACE,wCAAwC;AAC1C;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,wCAAwC;AAC1C;;AAEA;EACE,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;EACjB,qBAAqB;EACrB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,YAAY;EACZ,4BAA4B;AAC9B;;AAEA;EACE,+DAA+D,EAAE,+BAA+B;AAClG;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,yDAA6D;AAC/D;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,yBAAyB,EAAE,sBAAsB;AACnD;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,yDAA4D;AAC9D;;AAEA;EACE,yDAAmD;AACrD;;AAEA;EACE,wBAAwB;EACxB,oBAAoB;EACpB,aAAa;EACb,iBAAiB;EACjB,8BAA8B;EAC9B,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,cAAc;AAChB;;AAEA;EACE,4BAA4B;EAC5B,cAAc;AAChB;;AAEA;EACE,4BAA4B;EAC5B,cAAc;AAChB;;AAEA;EACE,4BAA4B;EAC5B,cAAc;AAChB;;AAEA;EACE,0BAA0B;EAC1B,aAAa;EACb,mBAAmB;EACnB,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.report {\r\n  padding: 0;\r\n  border-left: none;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.report.error {\r\n  background-color: rgba(247, 230, 230, 1);\r\n}\r\n\r\n.report.warning {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.report.warning.dark {\r\n  background-color: #24272d;\r\n  color: #dddee0;\r\n}\r\n\r\n.report.info {\r\n  background-color: rgba(242, 242, 242, 1);\r\n}\r\n\r\n.leftPanel {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.mainPanel {\r\n  padding: 10px 20px;\r\n  flex-grow: 1;\r\n}\r\n\r\n.error .mainPanel {\r\n  border: rgba(255, 92, 73, 1) 1px solid;\r\n}\r\n\r\n.warning .mainPanel {\r\n  border: rgba(254, 133, 0, 1) 1px solid;\r\n}\r\n\r\n.info .mainPanel {\r\n  border: rgba(0, 182, 203, 1) 1px solid;\r\n}\r\n\r\n.content {\r\n  margin-top: 16px;\r\n  padding: 5px;\r\n  padding-bottom: 0;\r\n  user-select: text;\r\n  -ms-user-select: text;\r\n  -moz-user-select: text;\r\n  -webkit-user-select: text;\r\n}\r\n\r\n.severityIcon {\r\n  width: 32px;\r\n  height: 32px;\r\n  margin: 16px;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.severityIcon.dark {\r\n  filter: invert(50%) sepia(50%) saturate(4000%) hue-rotate(0deg); /* ~Zowe support 02 (#e99023) */\r\n}\r\n\r\n.error .leftPanel {\r\n  background-color: rgba(255, 92, 73, 1);\r\n}\r\n\r\n.error .severityIcon {\r\n  background-image: url(../../assets/images/error-critical.png);\r\n}\r\n\r\n.warning .leftPanel {\r\n  background-color: rgba(254, 133, 0, 1);\r\n}\r\n\r\n.warning .leftPanel.dark {\r\n  background-color: #dddee0; /* Zowe cool grey 20 */\r\n}\r\n\r\n.info .leftPanel {\r\n  background-color: rgba(0, 182, 203, 1);\r\n}\r\n\r\n.warning .severityIcon {\r\n  background-image: url(../../assets/images/error-warning.png);\r\n}\r\n\r\n.info .severityIcon {\r\n  background-image: url(../../assets/images/info.png);\r\n}\r\n\r\n.title {\r\n  border-bottom: 1px solid;\r\n  font-kerning: normal;\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: space-between;\r\n  align-items: flex-end;\r\n}\r\n\r\n.titleText {\r\n  font-size: 150%;\r\n  font-size:21px;\r\n}\r\n\r\n.error .title {\r\n  border-bottom-color: #AA231F;\r\n  color: #AA231F;\r\n}\r\n\r\n.warning .title {\r\n  border-bottom-color: #e99023;\r\n  color: #e99023;\r\n}\r\n\r\n.info .title {\r\n  border-bottom-color: #188291;\r\n  color: #188291;\r\n}\r\n\r\n.buttonArea {\r\n  margin: 36px 10px 0px 10px;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: flex-end;\r\n}\r\n\r\n.timestamp {\r\n  font-size: 12px;\r\n  padding-left: 12px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/flyover/flyover.component.css":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/flyover/flyover.component.css ***!
-  \************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/flyover/flyover.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/flyover/flyover.component.css ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n}\r\n\r\n.rel-positioned {\r\n  position: relative;\r\n}\r\n\r\n.zlux-flyover-area {\r\n  position: absolute;\r\n  background: transparent;\r\n  border: transparent;\r\n  z-index: 1;\r\n}\r\n\r\n.zlux-flyover-content {\r\n  padding: 10px;\r\n  border: 1px solid #21649F;\r\n  background: #fff;\r\n  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer {\r\n  position: absolute;\r\n  /*bottom: -9px;\r\n  left: calc(50% - 10px);*/\r\n  width: 20px;\r\n  height: 20px;\r\n  transform: rotate(45deg);\r\n  background: transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.top {\r\n  border-top: 10px solid transparent;\r\n  border-left: 10px solid transparent;\r\n  border-bottom: 10px solid #fff;\r\n  border-right: 10px solid #fff;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.bottom {\r\n  border-top: 10px solid #fff;\r\n  border-left: 10px solid #fff;\r\n  border-bottom: 10px solid transparent;\r\n  border-right: 10px solid transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.left {\r\n  border-top: 10px solid #fff;\r\n  border-left: 10px solid transparent;\r\n  border-bottom: 10px solid transparent;\r\n  border-right: 10px solid #fff;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.right {\r\n  border-top: 10px solid transparent;\r\n  border-left: 10px solid #fff;\r\n  border-bottom: 10px solid #fff;\r\n  border-right: 10px solid transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-bottom-layer {\r\n  position: absolute;\r\n  /*bottom: -10px;\r\n  left: calc(50% - 10px);*/\r\n  width: 20px;\r\n  height: 20px;\r\n  background: #21649F;\r\n  transform: rotate(45deg);\r\n  box-shadow: 3px 0 0 rgba(1,1,1,0.3);\r\n  z-index: -1;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/flyover/flyover.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,mEAAmE;AACrE;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,uBAAuB;EACvB,mBAAmB;EACnB,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,gBAAgB;EAChB,qCAAqC;AACvC;;AAEA;EACE,kBAAkB;EAClB;0BACwB;EACxB,WAAW;EACX,YAAY;EACZ,wBAAwB;EACxB,uBAAuB;AACzB;;AAEA;EACE,kCAAkC;EAClC,mCAAmC;EACnC,8BAA8B;EAC9B,6BAA6B;AAC/B;;AAEA;EACE,2BAA2B;EAC3B,4BAA4B;EAC5B,qCAAqC;EACrC,oCAAoC;AACtC;;AAEA;EACE,2BAA2B;EAC3B,mCAAmC;EACnC,qCAAqC;EACrC,6BAA6B;AAC/B;;AAEA;EACE,kCAAkC;EAClC,4BAA4B;EAC5B,8BAA8B;EAC9B,oCAAoC;AACtC;;AAEA;EACE,kBAAkB;EAClB;0BACwB;EACxB,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,wBAAwB;EACxB,mCAAmC;EACnC,WAAW;AACb;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n}\r\n\r\n.rel-positioned {\r\n  position: relative;\r\n}\r\n\r\n.zlux-flyover-area {\r\n  position: absolute;\r\n  background: transparent;\r\n  border: transparent;\r\n  z-index: 1;\r\n}\r\n\r\n.zlux-flyover-content {\r\n  padding: 10px;\r\n  border: 1px solid #21649F;\r\n  background: #fff;\r\n  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer {\r\n  position: absolute;\r\n  /*bottom: -9px;\r\n  left: calc(50% - 10px);*/\r\n  width: 20px;\r\n  height: 20px;\r\n  transform: rotate(45deg);\r\n  background: transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.top {\r\n  border-top: 10px solid transparent;\r\n  border-left: 10px solid transparent;\r\n  border-bottom: 10px solid #fff;\r\n  border-right: 10px solid #fff;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.bottom {\r\n  border-top: 10px solid #fff;\r\n  border-left: 10px solid #fff;\r\n  border-bottom: 10px solid transparent;\r\n  border-right: 10px solid transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.left {\r\n  border-top: 10px solid #fff;\r\n  border-left: 10px solid transparent;\r\n  border-bottom: 10px solid transparent;\r\n  border-right: 10px solid #fff;\r\n}\r\n\r\n.zlux-flyover-arrow-top-layer.right {\r\n  border-top: 10px solid transparent;\r\n  border-left: 10px solid #fff;\r\n  border-bottom: 10px solid #fff;\r\n  border-right: 10px solid transparent;\r\n}\r\n\r\n.zlux-flyover-arrow-bottom-layer {\r\n  position: absolute;\r\n  /*bottom: -10px;\r\n  left: calc(50% - 10px);*/\r\n  width: 20px;\r\n  height: 20px;\r\n  background: #21649F;\r\n  transform: rotate(45deg);\r\n  box-shadow: 3px 0 0 rgba(1,1,1,0.3);\r\n  z-index: -1;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/paginator/paginator.component.css":
-/*!****************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/paginator/paginator.component.css ***!
-  \****************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/paginator/paginator.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/components/paginator/paginator.component.css ***!
+  \**************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n}\r\n\r\n.paginator-area {\r\n  height: 46px;\r\n  width: 100%;\r\n  flex: none;\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: row;\r\n}\r\n\r\n.page-area {\r\n  margin: 0 1rem 0 0.5rem;\r\n}\r\n\r\n.current-page-field {\r\n  flex: none;\r\n  background-color: white;\r\n  width: 4rem;\r\n  padding-left: 0.5rem;\r\n  margin-right: 0.5rem;\r\n}\r\n\r\n.right-page-area {\r\n  flex: auto;\r\n  text-align: right;\r\n  padding-right: 2rem;\r\n}\r\n\r\n.input-error {\r\n  border-color: red;\r\n}\r\n\r\nzlux-button {\r\n  margin: 0;\r\n  width: 32px;\r\n}\r\n\r\nzlux-button svg {\r\n  flex: 1 1 auto;\r\n}\r\n\r\nzlux-button >>> button {\r\n  padding: 0 !important;\r\n  display: flex;\r\n  flex-direction: row;\r\n  fill: rgb(21, 124, 189);\r\n}\r\n\r\nzlux-button >>> button:hover:not([disabled]),\r\nzlux-button >>> button:active:not([disabled]) {\r\n  fill: rgb(255, 255, 255);\r\n  background-color: rgb(13, 93, 141);\r\n}\r\n\r\n.first-button {\r\n  margin-left: 1rem;\r\n  margin-right: -1px;\r\n}\r\n\r\n.first-button >>> button {\r\n  border-top-right-radius: 0;\r\n  border-bottom-right-radius: 0;\r\n}\r\n\r\n.prev-button >>> button {\r\n  border-top-left-radius: 0;\r\n  border-bottom-left-radius: 0;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/paginator/paginator.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,mEAAmE;AACrE;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,UAAU;EACV,aAAa;EACb,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,UAAU;EACV,uBAAuB;EACvB,WAAW;EACX,oBAAoB;EACpB,oBAAoB;AACtB;;AAEA;EACE,UAAU;EACV,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,SAAS;EACT,WAAW;AACb;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA;;EAEE,wBAAwB;EACxB,kCAAkC;AACpC;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,0BAA0B;EAC1B,6BAA6B;AAC/B;;AAEA;EACE,yBAAyB;EACzB,4BAA4B;AAC9B;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n:host {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n}\r\n\r\n.paginator-area {\r\n  height: 46px;\r\n  width: 100%;\r\n  flex: none;\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: row;\r\n}\r\n\r\n.page-area {\r\n  margin: 0 1rem 0 0.5rem;\r\n}\r\n\r\n.current-page-field {\r\n  flex: none;\r\n  background-color: white;\r\n  width: 4rem;\r\n  padding-left: 0.5rem;\r\n  margin-right: 0.5rem;\r\n}\r\n\r\n.right-page-area {\r\n  flex: auto;\r\n  text-align: right;\r\n  padding-right: 2rem;\r\n}\r\n\r\n.input-error {\r\n  border-color: red;\r\n}\r\n\r\nzlux-button {\r\n  margin: 0;\r\n  width: 32px;\r\n}\r\n\r\nzlux-button svg {\r\n  flex: 1 1 auto;\r\n}\r\n\r\nzlux-button >>> button {\r\n  padding: 0 !important;\r\n  display: flex;\r\n  flex-direction: row;\r\n  fill: rgb(21, 124, 189);\r\n}\r\n\r\nzlux-button >>> button:hover:not([disabled]),\r\nzlux-button >>> button:active:not([disabled]) {\r\n  fill: rgb(255, 255, 255);\r\n  background-color: rgb(13, 93, 141);\r\n}\r\n\r\n.first-button {\r\n  margin-left: 1rem;\r\n  margin-right: -1px;\r\n}\r\n\r\n.first-button >>> button {\r\n  border-top-right-radius: 0;\r\n  border-bottom-right-radius: 0;\r\n}\r\n\r\n.prev-button >>> button {\r\n  border-top-left-radius: 0;\r\n  border-bottom-left-radius: 0;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-manager/popup-manager.component.css":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-manager/popup-manager.component.css ***!
-  \************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/popup-manager/popup-manager.component.css":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/popup-manager/popup-manager.component.css ***!
+  \**********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-shadow-hover {\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  z-index: 100;\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n\r\n.attachToCenter {\r\n  min-width: 400px;\r\n  display: inline-block;\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.attachToCorner {\r\n  min-width: 400px;\r\n  max-width: 650px;\r\n  position: absolute;\r\n  right: 20px;\r\n  bottom: 20px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/popup-manager/popup-manager.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,oCAAoC;EACpC,kBAAkB;EAClB,OAAO;EACP,MAAM;EACN,SAAS;EACT,QAAQ;EACR,YAAY;AACd;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,gBAAgB;EAChB,qBAAqB;EACrB,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,gCAAgC;AAClC;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-shadow-hover {\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  z-index: 100;\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n\r\n.attachToCenter {\r\n  min-width: 400px;\r\n  display: inline-block;\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.attachToCorner {\r\n  min-width: 400px;\r\n  max-width: 650px;\r\n  position: absolute;\r\n  right: 20px;\r\n  bottom: 20px;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-panel/popup-panel.component.css":
-/*!********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-panel/popup-panel.component.css ***!
-  \********************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/popup-panel/popup-panel.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/popup-panel/popup-panel.component.css ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-panel {\r\n  display: inline-block;\r\n  position: relative;\r\n  margin: 0;\r\n  padding: 0;\r\n  z-index: 50;\r\n}\r\n\r\n.blockDisplay {\r\n  display: block;\r\n}\r\n\r\n.ignoreVeil {\r\n  z-index: 200;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/popup-panel/popup-panel.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,qBAAqB;EACrB,kBAAkB;EAClB,SAAS;EACT,UAAU;EACV,WAAW;AACb;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-panel {\r\n  display: inline-block;\r\n  position: relative;\r\n  margin: 0;\r\n  padding: 0;\r\n  z-index: 50;\r\n}\r\n\r\n.blockDisplay {\r\n  display: block;\r\n}\r\n\r\n.ignoreVeil {\r\n  z-index: 200;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window-button-area/popup-window-button-area.component.css":
-/*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window-button-area/popup-window-button-area.component.css ***!
-  \**********************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/popup-window-button-area/popup-window-button-area.component.css":
+/*!********************************************************************************************!*\
+  !*** ./src/app/components/popup-window-button-area/popup-window-button-area.component.css ***!
+  \********************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-window-button-area {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n  flex: 1 0 auto;\r\n  padding: 1rem 1.5rem;\r\n  background-color: #f6f6f6;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.button-area-left {\r\n  text-align: left;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n.button-area-center {\r\n  text-align: center;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n.button-area-right {\r\n  text-align: right;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/popup-window-button-area/popup-window-button-area.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,mEAAmE;EACnE,cAAc;EACd,oBAAoB;EACpB,yBAAyB;EACzB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,cAAc;EACd,mBAAmB;AACrB;;;AAGA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.popup-window-button-area {\r\n  font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;\r\n  flex: 1 0 auto;\r\n  padding: 1rem 1.5rem;\r\n  background-color: #f6f6f6;\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.button-area-left {\r\n  text-align: left;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n.button-area-center {\r\n  text-align: center;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n.button-area-right {\r\n  text-align: right;\r\n  flex: 1 1 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window/popup-window.component.css":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window/popup-window.component.css ***!
-  \**********************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/popup-window/popup-window.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/popup-window/popup-window.component.css ***!
+  \********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
-
-
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_normal.png */ "./src/app/assets/images/close_normal.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_hover.png */ "./src/app/assets/images/close_hover.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_pressed.png */ "./src/app/assets/images/close_pressed.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_normal_dark.png */ "./src/app/assets/images/close_normal_dark.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_hover_dark.png */ "./src/app/assets/images/close_hover_dark.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/images/close_pressed_dark.png */ "./src/app/assets/images/close_pressed_dark.png"), __webpack_require__.b);
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
-var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
-var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
-var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../assets/images/close_normal.png */ "./src/app/assets/images/close_normal.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../assets/images/close_hover.png */ "./src/app/assets/images/close_hover.png");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../../assets/images/close_pressed.png */ "./src/app/assets/images/close_pressed.png");
+var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ../../assets/images/close_normal_dark.png */ "./src/app/assets/images/close_normal_dark.png");
+var ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(/*! ../../assets/images/close_hover_dark.png */ "./src/app/assets/images/close_hover_dark.png");
+var ___CSS_LOADER_URL_IMPORT_5___ = __webpack_require__(/*! ../../assets/images/close_pressed_dark.png */ "./src/app/assets/images/close_pressed_dark.png");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_4___);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_5___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n\r\n.top-header-hr {\r\n  height: 4px;\r\n  margin: 0;\r\n  background-color: #047cc0;\r\n  width: 100%;\r\n  border: none;\r\n  flex: none;\r\n}\r\n\r\n.top-hr:hover {\r\n  background-color: #009bef;\r\n}\r\n\r\n.bottom-header {}\r\n\r\n.bottom-header-dark {\r\n  background-color: #1a354d;\r\n}\r\n\r\n.bottom-header-hr {\r\n  margin: 0 2rem;\r\n  height: 1px;\r\n  background-color: #bdbabd;\r\n  border: none;\r\n  flex: none;\r\n}\r\n\r\n.bottom-header-hr-dark {\r\n  background-color: #516577;\r\n}\r\n\r\n.popup-window-header-area {\r\n  margin: 0;\r\n  padding: 0;\r\n  display: flex;\r\n  flex: none;\r\n  height: 50px;\r\n  color: #777677;\r\n}\r\n\r\n.popup-window-header-area-dark {\r\n  background-color: #1a354d;\r\n  color: #C0BFC0;\r\n}\r\n\r\n.popup-window-header {\r\n  margin-left: 2rem;\r\n  font-size: 21px;\r\n  float: left;\r\n  flex: 1 1 auto;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.close-button {\r\n  height: 20px;\r\n  width: 20px;\r\n  margin: 10px;\r\n  padding: 0;\r\n  flex: none;\r\n  box-sizing: border-box;\r\n  background-color: transparent;\r\n  transition: 0.5s;\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") right top no-repeat;\r\n}\r\n\r\n.close-button:hover {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n}\r\n\r\n.close-button:active {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\r\n}\r\n\r\n.close-button-dark {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") right top no-repeat;\r\n}\r\n\r\n.close-button-dark:hover {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\r\n}\r\n\r\n.close-button-dark:active {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\r\n}\r\n\r\n.popup-window-popup {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  z-index: 1000;\r\n  max-height: 80%;\r\n  background: #fff;\r\n  display: flex;\r\n  flex-direction: column;\r\n  box-shadow: 0 0 10px rgba(1, 1, 1, 0.14);\r\n}\r\n\r\n@media (min-width: 1450px) {\r\n  .popup-window-popup {\r\n    width: 45%;\r\n    margin: 2em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1449px) and (min-width: 1200px) {\r\n  .popup-window-popup {\r\n    width: 55%;\r\n    margin: 2em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1199px) and (min-width: 1020px) {\r\n  .popup-window-popup {\r\n    width: 70%;\r\n    margin: 1.5em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1019px) {\r\n  .popup-window-popup {\r\n    width: 95%;\r\n    margin: 1em auto;\r\n  }\r\n}\r\n\r\n.popup-window-content {\r\n  flex: 1 1 auto;\r\n  overflow-y: auto;\r\n  overflow-x: hidden;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.popup-window-button {\r\n  font-size: large;\r\n  min-width: 5em;\r\n  border-radius: 0.5em;\r\n  padding: .5em 1em;\r\n}\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n", "",{"version":3,"sources":["webpack://./src/app/components/popup-window/popup-window.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;;AAGD;EACE,WAAW;EACX,SAAS;EACT,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,gBAAgB;;AAEhB;EACE,yBAAyB;AAC3B;;AAEA;EACE,cAAc;EACd,WAAW;EACX,yBAAyB;EACzB,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,SAAS;EACT,UAAU;EACV,aAAa;EACb,UAAU;EACV,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,WAAW;EACX,cAAc;EACd,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,UAAU;EACV,UAAU;EACV,sBAAsB;EACtB,6BAA6B;EAC7B,gBAAgB;EAChB,uEAAyE;AAC3E;;AAEA;EACE,yDAA0D;AAC5D;;AAEA;EACE,yDAA4D;AAC9D;;AAEA;EACE,uEAA8E;AAChF;;AAEA;EACE,yDAA+D;AACjE;;AAEA;EACE,yDAAiE;AACnE;;AAEA;EACE,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,aAAa;EACb,eAAe;EACf,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,wCAAwC;AAC1C;;AAEA;EACE;IACE,UAAU;IACV,gBAAgB;EAClB;AACF;;AAEA;EACE;IACE,UAAU;IACV,gBAAgB;EAClB;AACF;;AAEA;EACE;IACE,UAAU;IACV,kBAAkB;EACpB;AACF;;AAEA;EACE;IACE,UAAU;IACV,gBAAgB;EAClB;AACF;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,oBAAoB;EACpB,iBAAiB;AACnB;;AAEA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n\r\n.top-header-hr {\r\n  height: 4px;\r\n  margin: 0;\r\n  background-color: #047cc0;\r\n  width: 100%;\r\n  border: none;\r\n  flex: none;\r\n}\r\n\r\n.top-hr:hover {\r\n  background-color: #009bef;\r\n}\r\n\r\n.bottom-header {}\r\n\r\n.bottom-header-dark {\r\n  background-color: #1a354d;\r\n}\r\n\r\n.bottom-header-hr {\r\n  margin: 0 2rem;\r\n  height: 1px;\r\n  background-color: #bdbabd;\r\n  border: none;\r\n  flex: none;\r\n}\r\n\r\n.bottom-header-hr-dark {\r\n  background-color: #516577;\r\n}\r\n\r\n.popup-window-header-area {\r\n  margin: 0;\r\n  padding: 0;\r\n  display: flex;\r\n  flex: none;\r\n  height: 50px;\r\n  color: #777677;\r\n}\r\n\r\n.popup-window-header-area-dark {\r\n  background-color: #1a354d;\r\n  color: #C0BFC0;\r\n}\r\n\r\n.popup-window-header {\r\n  margin-left: 2rem;\r\n  font-size: 21px;\r\n  float: left;\r\n  flex: 1 1 auto;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.close-button {\r\n  height: 20px;\r\n  width: 20px;\r\n  margin: 10px;\r\n  padding: 0;\r\n  flex: none;\r\n  box-sizing: border-box;\r\n  background-color: transparent;\r\n  transition: 0.5s;\r\n  background: url(../../assets/images/close_normal.png) right top no-repeat;\r\n}\r\n\r\n.close-button:hover {\r\n  background-image: url(../../assets/images/close_hover.png);\r\n}\r\n\r\n.close-button:active {\r\n  background-image: url(../../assets/images/close_pressed.png);\r\n}\r\n\r\n.close-button-dark {\r\n  background: url(../../assets/images/close_normal_dark.png) right top no-repeat;\r\n}\r\n\r\n.close-button-dark:hover {\r\n  background-image: url(../../assets/images/close_hover_dark.png);\r\n}\r\n\r\n.close-button-dark:active {\r\n  background-image: url(../../assets/images/close_pressed_dark.png);\r\n}\r\n\r\n.popup-window-popup {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  z-index: 1000;\r\n  max-height: 80%;\r\n  background: #fff;\r\n  display: flex;\r\n  flex-direction: column;\r\n  box-shadow: 0 0 10px rgba(1, 1, 1, 0.14);\r\n}\r\n\r\n@media (min-width: 1450px) {\r\n  .popup-window-popup {\r\n    width: 45%;\r\n    margin: 2em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1449px) and (min-width: 1200px) {\r\n  .popup-window-popup {\r\n    width: 55%;\r\n    margin: 2em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1199px) and (min-width: 1020px) {\r\n  .popup-window-popup {\r\n    width: 70%;\r\n    margin: 1.5em auto;\r\n  }\r\n}\r\n\r\n@media (max-width: 1019px) {\r\n  .popup-window-popup {\r\n    width: 95%;\r\n    margin: 1em auto;\r\n  }\r\n}\r\n\r\n.popup-window-content {\r\n  flex: 1 1 auto;\r\n  overflow-y: auto;\r\n  overflow-x: hidden;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.popup-window-button {\r\n  font-size: large;\r\n  min-width: 5em;\r\n  border-radius: 0.5em;\r\n  padding: .5em 1em;\r\n}\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app/components/veil/veil.component.css":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app/components/veil/veil.component.css ***!
-  \******************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/app/components/veil/veil.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/components/veil/veil.component.css ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.veil {\r\n  display: none;\r\n  position: absolute;\r\n  opacity: 0.5;\r\n  z-index: 1;\r\n  background: gray;\r\n  background: rgba(0,0,0,0.5);\r\n  flex: 1 1 auto;\r\n  flex-direction: column;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.state-active {\r\n  display: flex !important;\r\n}\r\n\r\n.veil > img {\r\n  position: absolute;\r\n  left: calc(50% - 21px);\r\n  top: calc(50% - 21px);\r\n  height: 42px;\r\n  width: 42px;\r\n  z-index: 2;\r\n  transform: rotate(360deg);\r\n}\r\n\r\n.rotated {\r\n  animation: swirl 3s linear infinite;\r\n}\r\n\r\n@keyframes swirl {\r\n  0% { transform: rotate(0deg); }\r\n  100% { transform: rotate(360deg); }\r\n}\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n", "",{"version":3,"sources":["webpack://./src/app/components/veil/veil.component.css"],"names":[],"mappings":";;AAEA;;;;;;;;CAQC;;AAED;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,UAAU;EACV,gBAAgB;EAChB,2BAA2B;EAC3B,cAAc;EACd,sBAAsB;EACtB,OAAO;EACP,QAAQ;EACR,MAAM;EACN,SAAS;AACX;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,kBAAkB;EAClB,sBAAsB;EACtB,qBAAqB;EACrB,YAAY;EACZ,WAAW;EACX,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,mCAAmC;AACrC;;AAEA;EACE,KAAK,uBAAuB,EAAE;EAC9B,OAAO,yBAAyB,EAAE;AACpC;;AAEA;;;;;;;;CAQC","sourcesContent":["\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n.veil {\r\n  display: none;\r\n  position: absolute;\r\n  opacity: 0.5;\r\n  z-index: 1;\r\n  background: gray;\r\n  background: rgba(0,0,0,0.5);\r\n  flex: 1 1 auto;\r\n  flex-direction: column;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.state-active {\r\n  display: flex !important;\r\n}\r\n\r\n.veil > img {\r\n  position: absolute;\r\n  left: calc(50% - 21px);\r\n  top: calc(50% - 21px);\r\n  height: 42px;\r\n  width: 42px;\r\n  z-index: 2;\r\n  transform: rotate(360deg);\r\n}\r\n\r\n.rotated {\r\n  animation: swirl 3s linear infinite;\r\n}\r\n\r\n@keyframes swirl {\r\n  0% { transform: rotate(0deg); }\r\n  100% { transform: rotate(360deg); }\r\n}\r\n\r\n/*\r\n  This program and the accompanying materials are\r\n  made available under the terms of the Eclipse Public License v2.0 which accompanies\r\n  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html\r\n  \r\n  SPDX-License-Identifier: EPL-2.0\r\n  \r\n  Copyright Contributors to the Zowe Project.\r\n*/\r\n\r\n"],"sourceRoot":""}]);
 // Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+module.exports = ___CSS_LOADER_EXPORT___.toString();
 
 
 /***/ }),
@@ -1053,226 +959,6 @@ function styleTagTransform(css, styleElement) {
 }
 
 module.exports = styleTagTransform;
-
-/***/ }),
-
-/***/ "./src/app/components/button/button.component.css":
-/*!********************************************************!*\
-  !*** ./src/app/components/button/button.component.css ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./button.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/button/button.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/checkbox/checkbox.component.css":
-/*!************************************************************!*\
-  !*** ./src/app/components/checkbox/checkbox.component.css ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./checkbox.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/checkbox/checkbox.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/error-report/error-report.component.css":
-/*!********************************************************************!*\
-  !*** ./src/app/components/error-report/error-report.component.css ***!
-  \********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./error-report.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/error-report/error-report.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/flyover/flyover.component.css":
-/*!**********************************************************!*\
-  !*** ./src/app/components/flyover/flyover.component.css ***!
-  \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./flyover.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/flyover/flyover.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/paginator/paginator.component.css":
-/*!**************************************************************!*\
-  !*** ./src/app/components/paginator/paginator.component.css ***!
-  \**************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./paginator.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/paginator/paginator.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/popup-manager/popup-manager.component.css":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/popup-manager/popup-manager.component.css ***!
-  \**********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./popup-manager.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-manager/popup-manager.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/popup-panel/popup-panel.component.css":
-/*!******************************************************************!*\
-  !*** ./src/app/components/popup-panel/popup-panel.component.css ***!
-  \******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./popup-panel.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-panel/popup-panel.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/popup-window-button-area/popup-window-button-area.component.css":
-/*!********************************************************************************************!*\
-  !*** ./src/app/components/popup-window-button-area/popup-window-button-area.component.css ***!
-  \********************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./popup-window-button-area.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window-button-area/popup-window-button-area.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/popup-window/popup-window.component.css":
-/*!********************************************************************!*\
-  !*** ./src/app/components/popup-window/popup-window.component.css ***!
-  \********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./popup-window.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/popup-window/popup-window.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ "./src/app/components/veil/veil.component.css":
-/*!****************************************************!*\
-  !*** ./src/app/components/veil/veil.component.css ***!
-  \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-        var result = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./veil.component.css */ "./node_modules/css-loader/dist/cjs.js!./src/app/components/veil/veil.component.css");
-
-        if (result && result.__esModule) {
-            result = result.default;
-        }
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
 
 /***/ }),
 
@@ -3417,9 +3103,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_rxjs__;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -3459,32 +3142,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_rxjs__;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/

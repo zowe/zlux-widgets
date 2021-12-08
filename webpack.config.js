@@ -75,7 +75,13 @@ var config = {
       {
         test: /\.css$/,
         include: root('./src/app/components'),
-        use: ['to-string-loader', 'css-loader']
+        use: [{
+          loader: 'css-loader',
+          options: {
+            exportType: 'string',
+            esModule: false
+          }
+        }]
       }
     ]
   },
