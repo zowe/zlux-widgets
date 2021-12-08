@@ -23,7 +23,7 @@ function root(__path) {
 var config = {
   entry: [root('./src/app/index.ts')],
   devtool: 'source-map',
-  mode: 'development',
+  mode: 'production',
   output: {
     path: root('.'),
     filename: './dist/index.js',
