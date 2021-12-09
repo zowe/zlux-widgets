@@ -13,7 +13,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { AngularWebpackPlugin } = require('@ngtools/webpack');
+const WebpackShellPlugin = require('webpack-shell-plugin-next');
 
 
 function root(__path) {
@@ -44,11 +44,19 @@ var config = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        use: ['@ngtools/webpack'],
+        use: [
+          'ts-loader',
+          'angular2-template-loader'
+        ]
       },
       {
         test: /\.html$/,
-        use: ['html-loader']
+        use: [{
+          loader: 'html-loader',
+          options: {
+            esModule: false
+          }
+        }]
       },
       {
         test: /\.svg$/,
@@ -70,7 +78,8 @@ var config = {
         use: [{
           loader: 'css-loader',
           options: {
-            exportType: 'string'
+            exportType: 'string',
+            esModule: false
           }
         }]
       }
@@ -83,29 +92,18 @@ var config = {
     extensions: ['.js', '.ts']
   },
   plugins: [
-    new AngularWebpackPlugin({
-      jitMode: true,
-      directTemplateLoading: false
-    }),
     new webpack.WatchIgnorePlugin({
       paths: [/\.js$/, /\.d\.ts$/]
     }),
     new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: '**/**.d.ts',
-          to: './dist',
-          context: './out_tsc/src/app/',
-          globOptions: {
-            ignore: ['**/*ngstyle*', '**/*ngfactory*']
-          }
-        },
-        {
-          from: '**/*.metadata.json',
-          to: './dist',
-          context: './out_tsc/src/app/'
-        }
-      ]
+      patterns: [{
+        from: '**/*.metadata.json',
+        to: './dist',
+        context: './out_tsc/src/app/'
+      }]
+    }),
+    new WebpackShellPlugin({
+      onBuildStart: ['npm run metadata']
     })
   ]
 };
