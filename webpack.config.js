@@ -70,7 +70,16 @@ var config = {
       {
         test: /\.css$/,
         include: root('./src/app/assets/css'),
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: false
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -79,7 +88,8 @@ var config = {
           loader: 'css-loader',
           options: {
             exportType: 'string',
-            esModule: false
+            esModule: false,
+            sourceMap: false
           }
         }]
       }

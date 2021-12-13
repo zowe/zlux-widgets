@@ -10,7 +10,7 @@
   Copyright Contributors to the Zowe Project.
 */
 
-.text-input {
+:local(.text-input) {
   flex: 1 1 auto;
   background: transparent;
   border: 1px solid;
@@ -21,27 +21,27 @@
   font-family: Helvetica, Open Sans, Arial, Lucida Grande, sans-serif;
 }
 
-.text-input-dark {
+:local(.text-input-dark) {
   border: 1px solid #ececec;
   color: #ececec;
 }
 
-.text-input:hover:not(:disabled),
-.text-input:active:not(:disabled) {
+:local(.text-input:hover:not(:disabled)),
+:local(.text-input:active:not(:disabled)) {
   border: 1px solid rgb(21, 124, 189);
 }
 
-.text-input-dark:hover:not(:disabled),
-.text-input-dark:active:not(:disabled) {
+:local(.text-input-dark:hover:not(:disabled)),
+:local(.text-input-dark:active:not(:disabled)) {
   border: 1px solid #56acf2;
 }
 
-.text-input:disabled {
+:local(.text-input:disabled) {
   opacity: 0.6;
   background-color: rgba(119, 118, 119, 0.117647058823529);
 }
 
-.text-input-dark:disabled {
+:local(.text-input-dark:disabled) {
   opacity: 0.6;
   background-color: #464646;
 }
