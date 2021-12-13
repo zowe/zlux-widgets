@@ -1,11 +1,17 @@
 {
+  "include": [
+    "./src/app"
+  ],
+  "exclude": [
+    "./out_tsc"
+  ],
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./out_tsc",
     "baseUrl": "./src/app",
     "sourceMap": true,
     "declaration": true,
-    "declarationDir": ".",
+    "declarationDir": "./dist",
     "module": "amd",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
