@@ -1,5 +1,4 @@
 
-
 /*
   This program and the accompanying materials are
   made available under the terms of the Eclipse Public License v2.0 which accompanies
@@ -20,6 +19,9 @@ export interface ErrorReportStruct {
     id: number;
     timestamp: Date;
     subject: Rx.Subject<any>;
+    theme?: string;
+    style?: {};
+    callToAction?: boolean;
 }
 export declare enum ZluxErrorSeverity {
     ERROR = "error",
@@ -43,7 +45,6 @@ export declare class ZluxPopupManagerService {
     createErrorReport(severity: ZluxErrorSeverity, title: string, text: string, options?: any): ErrorReportStruct;
     reportError(severity: ZluxErrorSeverity, title: string, text: string, options?: any): Rx.Observable<any>;
 }
-
 
 /*
   This program and the accompanying materials are
