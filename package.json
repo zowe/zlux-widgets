@@ -2,8 +2,8 @@
   "name": "@zlux/widgets",
   "version": "0.0.4",
   "scripts": {
-    "start": "webpack --progress --color --watch",
-    "build": "webpack --progress --color",
+    "start": "ngc -p tsconfig.ngx-i18n.json && webpack --progress --color --watch",
+    "build": "ngc -p tsconfig.ngx-i18n.json && webpack --progress --color",
     "metadata": "ngc -p tsconfig.ngx-i18n.json",
     "lint": "tslint -p ./tsconfig.json -c ./tslint.json"
   },

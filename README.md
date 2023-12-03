@@ -6,7 +6,7 @@ SPDX-License-Identifier: EPL-2.0
 
 Copyright Contributors to the Zowe Project.
 
-# zLUX widgets library
+# Zowe Widgets (formally: zLUX widgets) library
 
 Adding the library to your package:
 `npm install "git+ssh://git@github.com:zowe/zlux-widgets.git" --save`
@@ -61,10 +61,61 @@ Example:
   </zlux-popup-window-button-area>
 </zlux-popup-window>
 ```
+
 # For Maintainers
 Because this library is used as an npm package, you must remember to commit changes to index.js and index.js.map, and any other files that changed as the result of building the application (e.g. **/*.d.ts)
 
 Also, remember to retain the copyright headers in those build products (they currently need to be restored "by hand")
+
+## Develop your app with local version of zlux-widgets - Option 1 Linking
+If you want to develop the Zowe Widgets and your own app simultaneously, you can do the following:
+
+### Part I- How to link
+
+#### Add npm symlink 
+Note: @zlux/widgets is package name in package.json
+```
+cd zlux-widgets
+npm link 
+```
+#### Replace dependency in your app
+```
+cd my-app/webClient
+npm link @zlux/widgets
+```
+
+### Part II - Back to normal, how to delink
+
+#### Remove Dependency link
+```
+cd my-app/webClient
+npm unlink
+```
+
+#### Delete npm symlink
+
+```
+cd zlux-widgets
+npm uninstall
+```
+
+## Develop your app with local version of Zowe Widgets - Option 2 Local path
+An alternative to option 1 is to use a local path.
+
+#### Add local path of built FT
+Change the package.json of your app to point to the local path of the built zlux-widgets. For example in package.json,
+```
+[...]
+"@zowe/zlux-angular-file-tree": "file://../../your-local-path/zlux-widgets",
+[...]
+```
+## Develop your app with local version of FT - Option 3 Git path
+Change the package.json of your app to point to the Git repo & branch. Your Git repo may also be your fork. For example in package.json,
+```
+[...]
+"@zlux/widgets": "git+https://github.com/zowe/zlux-widgets.git#<your-branch>",
+[...]
+```
 
 
 This program and the accompanying materials are
