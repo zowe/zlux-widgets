@@ -102,14 +102,14 @@ npm uninstall
 ## Develop your app with local version of Zowe Widgets - Option 2 Local path
 An alternative to option 1 is to use a local path.
 
-#### Add local path of built FT
+#### Add local path of built zlux-widgets
 Change the package.json of your app to point to the local path of the built zlux-widgets. For example in package.json,
 ```
 [...]
-"@zowe/zlux-angular-file-tree": "file://../../your-local-path/zlux-widgets",
+"@zowe/zlux-widgets": "file://../../your-local-path/zlux-widgets",
 [...]
 ```
-## Develop your app with local version of FT - Option 3 Git path
+## Develop your app with local version of zlux-widgets - Option 3 Git path
 Change the package.json of your app to point to the Git repo & branch. Your Git repo may also be your fork. For example in package.json,
 ```
 [...]
