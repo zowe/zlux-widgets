@@ -106,7 +106,7 @@ An alternative to option 1 is to use a local path.
 Change the package.json of your app to point to the local path of the built zlux-widgets. For example in package.json,
 ```
 [...]
-"@zowe/zlux-widgets": "file://../../your-local-path/zlux-widgets",
+"@zlux/widgets": "file://../../your-local-path/zlux-widgets",
 [...]
 ```
 ## Develop your app with local version of zlux-widgets - Option 3 Git path
