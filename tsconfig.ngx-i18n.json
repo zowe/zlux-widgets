@@ -6,7 +6,7 @@
   "compilerOptions": {
     "outDir": "./out_tsc",
     "baseUrl": "./src/app",
-    "module": "amd",
+    "module": "ES2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -24,6 +24,8 @@
   },
   "angularCompilerOptions": {
     "skipMetadataEmit" : false,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
+    "enableIvy": true,
+    "allowEmptyCodegenFiles": true
   }
 }

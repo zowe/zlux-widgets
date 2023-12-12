@@ -4,6 +4,7 @@
   "scripts": {
     "start": "ngc -p tsconfig.ngx-i18n.json && webpack --progress --color --watch",
     "build": "ngc -p tsconfig.ngx-i18n.json && webpack --progress --color",
+    "postinstall": "npx ngcc",
     "metadata": "ngc -p tsconfig.ngx-i18n.json",
     "lint": "tslint -p ./tsconfig.json -c ./tslint.json"
   },
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@angular/compiler": "~16.0.0",
     "@angular/compiler-cli": "~16.0.0",
+    "@angular/cli": "~16.2.10",
     "@types/node": "~12.0.0",
     "ajv": "~8.8.2",
     "angular2-template-loader": "~0.6.2",

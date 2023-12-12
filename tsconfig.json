@@ -12,7 +12,7 @@
     "sourceMap": true,
     "declaration": true,
     "declarationDir": "./dist",
-    "module": "amd",
+    "module": "ES2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -24,6 +24,10 @@
       "es2016",
       "dom"
     ],
-    "paths": {}
+    "paths": {},
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "allowEmptyCodegenFiles": true
   }
 }
