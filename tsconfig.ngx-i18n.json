@@ -25,6 +25,6 @@
   "angularCompilerOptions": {
     "skipMetadataEmit" : false,
     "enableResourceInlining": true,
-    "enableIvy": false
+    "enableIvy": true
   }
 }

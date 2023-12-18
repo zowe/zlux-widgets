@@ -4,6 +4,7 @@
   "scripts": {
     "start": "webpack --progress --color --watch",
     "build": "webpack --progress --color",
+    "postinstall": "ngcc",
     "metadata": "ngc -p tsconfig.ngx-i18n.json",
     "lint": "tslint -p ./tsconfig.json -c ./tslint.json"
   },
