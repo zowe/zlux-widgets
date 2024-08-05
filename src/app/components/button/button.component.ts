@@ -20,7 +20,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ZluxButtonComponent {
   @Input() buttonType: string = 'button';
-  @Input() label: string;
+  @Input() label: string = "";
   @Input() disabled: boolean = false;
   @Input() callToAction: boolean = false;
   @Input() lightSkin: boolean = false;

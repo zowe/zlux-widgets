@@ -20,14 +20,14 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ["checkbox.component.css"]
 })
 export class ZluxCheckboxComponent {
-  @Input() value: boolean;
+  @Input() value: boolean  = false;
   @Output() valueChange: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Input() label: string;
-  @Input() inputId: string;
-  @Input() dark: boolean;
-  @Input() disabled: boolean;
+  @Input() label: string = "";
+  @Input() inputId: string = "";
+  @Input() dark: boolean = false;
+  @Input() disabled: boolean = false;
   @Input() style: any;
-  @Input() styleClass: string;
+  @Input() styleClass: string = "";
 
   onValueChange(model: boolean) {
     this.value = model;

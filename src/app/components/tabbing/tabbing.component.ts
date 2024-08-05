@@ -19,13 +19,13 @@ import { CommonModule } from '@angular/common';
 })
 export class ZluxTabbingComponent implements  AfterViewInit {
 
-  @Input() hiddenIds:string;
-  @Input() hiddenPos:string;
+  @Input() hiddenIds:string = "";
+  @Input() hiddenPos:string = "";
   private totalTabs;
   private activeTab;
   private tabEvent:boolean;
-  private focusableArr: HTMLElement[];
-  private idArr: string[];
+  private focusableArr: HTMLElement[] = [];
+  private idArr: string[] = [];
   private parentRef:HTMLElement;
 
   constructor(private elementRef:ElementRef) {
@@ -90,7 +90,7 @@ export class ZluxTabbingComponent implements  AfterViewInit {
       //TODO: Element.focus seems to fail at times. Logging the element shows it does not *seem* like a timing issue for
       //the querySelector method, but rather the focus method, and adding a 200ms delay showed reliability when testing
       if(this.focusableArr) {
-        let element = this.focusableArr[this.activeTab];
+        let element: HTMLElement | null = this.focusableArr[this.activeTab];
         if(element && document.body.contains(element)) {
           if(this.isElementDisabled(element)) {
             this.switchTab(isForward); 
@@ -118,7 +118,7 @@ export class ZluxTabbingComponent implements  AfterViewInit {
 
   checkAndAddElmAgain(selector:string, elmIndex:number) {
     const root =this.parentRef || document;
-    const newElm = root.querySelector<HTMLElement>(selector);
+    const newElm: HTMLElement = root.querySelector<HTMLElement>(selector)!;
     this.focusableArr[elmIndex] = newElm;
     return newElm;
   }
@@ -175,19 +175,19 @@ export class ZluxTabbingComponent implements  AfterViewInit {
   }
 
   findAllFocusable(domRef:HTMLElement) {
-    let lists = [];
+    let lists: HTMLElement[] = [];
     if(domRef && domRef['querySelectorAll']!=null) {
       const selectorStr = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
       lists = Array.from(domRef.querySelectorAll<HTMLElement>(selectorStr));
       lists = lists.sort((elm1, elm2)=>{
-        let tab1 = parseInt(elm1.getAttribute('tabindex')) || 0;
-        let tab2 = parseInt(elm2.getAttribute('tabindex')) || 0;
+        let tab1 = parseInt(elm1.getAttribute('tabindex')!) || 0;
+        let tab2 = parseInt(elm2.getAttribute('tabindex')!) || 0;
         return tab2 - tab1;
       })
     }
     if(this.hiddenPos) {
       this.hiddenPos.split(',').map(val=>parseInt(val)).forEach((val) =>{
-        lists.splice(val-1,0,null); 
+        lists.splice(val-1,0); 
       })
     }
 
@@ -195,8 +195,8 @@ export class ZluxTabbingComponent implements  AfterViewInit {
   }
 
   getAllIds(focusableArr:HTMLElement[]) {
-    let lists = [];
-    let duplicates = [];
+    let lists: string[] = [];
+    let duplicates: number[] = [];
 
     lists = focusableArr.map(elm => this.getElementSelector(elm));
     

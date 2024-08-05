@@ -21,8 +21,8 @@ import { CommonModule } from '@angular/common';
 })
 
 export class ZluxVeilComponent {
-  @Input() isEnabled: boolean;
-  @Input() enableSpinner: boolean;
+  @Input() isEnabled: boolean = false;
+  @Input() enableSpinner: boolean = false;
 }
 
 @NgModule({

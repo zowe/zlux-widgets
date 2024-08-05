@@ -21,8 +21,8 @@ import { ZluxPopupManagerService } from '../../services/popup-manager.service';
   styleUrls: ["popup-window.component.css"]
 })
 export class ZluxPopupWindowComponent implements OnInit, OnDestroy {
-  @Input() header: string;
-  @Input() dark: boolean;
+  @Input() header: string = "";
+  @Input() dark: boolean = false;
   @Input() currentStyle: popupWindowPopupStyle = {};
   @Input() maxWidth: string = "";
   @Input() maxHeight: string = "";

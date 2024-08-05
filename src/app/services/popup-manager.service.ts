@@ -24,7 +24,7 @@ export interface ErrorReportStruct {
   title: string,
   buttons: string[],
   id: number,
-  timestamp: Date,
+  timestamp: Date | undefined,
   subject: Subject<any>,
   theme?: string,
   style?: {},
@@ -116,7 +116,7 @@ export class ZluxPopupManagerService {
   createErrorReport(severity: ZluxErrorSeverity, title: string, text: string, options?: any): ErrorReportStruct {
     options = options || {};
     let buttons = options.buttons || ["Close"];
-    let timestamp: Date;
+    let timestamp: Date | undefined;
     if (options.timestamp == false) {
       timestamp = undefined;
     } else {

@@ -26,12 +26,12 @@ import { ZluxFlyoverModule } from '../flyover/flyover.component';
 export class ZluxPaginatorComponent implements OnChanges {
   @Input() rows: number = 0;
   @Input() totalRecords: number = 0;
-  @Input() hasMoreRecords: boolean;
+  @Input() hasMoreRecords: boolean = false;
   @Output() onPageChange: EventEmitter<any> = new EventEmitter<any>();
   @Output() onFetchMoreData: EventEmitter<void> = new EventEmitter<void>();
   public pageIndex: number = -1;
-  loadedPageNumber: number;
-  isInputIncorrect: boolean;
+  loadedPageNumber: number = 0;
+  isInputIncorrect: boolean = false;
   preventEvent: boolean = false;
   get indexMax(): number {
     return this.totalRecords > (this.pageIndex + 1) * this.rows ? (this.pageIndex + 1) * this.rows : this.totalRecords;

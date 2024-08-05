@@ -26,8 +26,8 @@ export class ZluxPopupManagerComponent {
   static REPORT_VISIBLE_TIMEOUT: number = 15;
 
   blockCount: number = 0;
-  currentErrorBlocking: ErrorReportStruct = null;
-  currentErrorNonblocking: ErrorReportStruct = null;
+  currentErrorBlocking: ErrorReportStruct | null = null;
+  currentErrorNonblocking: ErrorReportStruct | null = null;
   errors: ErrorReportStruct[] = [];
 
   constructor(private popupManager: ZluxPopupManagerService) {

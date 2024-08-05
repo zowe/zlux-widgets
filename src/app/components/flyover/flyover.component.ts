@@ -36,10 +36,10 @@ interface Rect {
   }
 })
 export class ZluxFlyover {
-  @Input() flyover: ZluxFlyoverComponent;
-  @Input() position: 'top' | 'bottom' | 'left' | 'right';
+  @Input() flyover: ZluxFlyoverComponent | undefined;
+  @Input() position: 'top' | 'bottom' | 'left' | 'right' = 'top';
   @Input() showDelayMs: number = 200;
-  @Input() zluxFlyoverDisabled: boolean;
+  @Input() zluxFlyoverDisabled: boolean = false;
   private preparingToShow: boolean = false;
 
   constructor(private el: ElementRef) { }
@@ -57,7 +57,7 @@ export class ZluxFlyover {
         this.preparingToShow = true;
         setTimeout(() => {
           if (this.preparingToShow) {
-            this.flyover.show(this.el.nativeElement, this.position);
+            this.flyover!.show(this.el.nativeElement, this.position);
             this.preparingToShow = false;
           }
         },
@@ -68,7 +68,7 @@ export class ZluxFlyover {
   @HostListener('mouseleave')
   onMouseLeave(e: Event) {
     this.preparingToShow = false;
-    this.flyover.hide();
+    this.flyover!.hide();
   }
 
   isEnabled() {
@@ -83,33 +83,33 @@ export class ZluxFlyover {
 })
 export class ZluxFlyoverComponent implements OnInit {
   @Input() hideDelayMs: number = 200;
-  top: number;
-  left: number;
+  top: number = 0;
+  left: number = 0;
   hover: boolean = false;
   targetHover: boolean = false;
   active: boolean = false;
-  arrowTopOffsetLeft: number;
-  arrowTopOffsetBottom: number;
-  arrowBottomOffsetLeft: number;
-  arrowBottomOffsetBottom: number;
+  arrowTopOffsetLeft: number = 0;
+  arrowTopOffsetBottom: number = 0;
+  arrowBottomOffsetLeft: number = 0;
+  arrowBottomOffsetBottom: number = 0;
   position: string = 'top';
   flyoverMarginRight: number = 15;
   flyoverMarginLeft: number = 15;
   flyoverMarginTop: number = 10;
   flyoverMarginBottom: number = 20;
-  hideTimer: number;
+  hideTimer: number = 0;
 
   constructor(public el: ElementRef) { }
 
   ngOnInit() {
-    this.arrowTopOffsetLeft = this.contentArea.nativeElement.clientWidth / 2 - 10;
+    this.arrowTopOffsetLeft = this.contentArea!.nativeElement.clientWidth / 2 - 10;
     this.arrowTopOffsetBottom = -9;
-    this.arrowBottomOffsetLeft = this.contentArea.nativeElement.clientWidth / 2 - 10;
+    this.arrowBottomOffsetLeft = this.contentArea!.nativeElement.clientWidth / 2 - 10;
     this.arrowBottomOffsetBottom = -10;
   }
 
   @ViewChild('area')
-  contentArea: ElementRef;
+  contentArea: ElementRef | undefined;
 
   @HostListener('mouseenter')
   onMouseEnter(e: Event) {
@@ -167,7 +167,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private setTopPosition(onEl: any) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let rect: Rect = this.GetRelativeShift(onEl, content);
     this.top = rect.top + onEl.offsetTop - content.clientHeight - 20;
     this.left = rect.left + onEl.offsetLeft - content.clientWidth / 2 + onEl.offsetWidth / 2;
@@ -181,7 +181,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private setBottomPosition(onEl: any) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let rect: Rect = this.GetRelativeShift(onEl, content);
     this.top = rect.top + onEl.offsetTop + onEl.offsetHeight + 20;
     this.left = rect.left + onEl.offsetLeft - content.clientWidth / 2 + onEl.offsetWidth / 2;
@@ -195,7 +195,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private horizontalAlign(onEl: any, rect: Rect) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let distToRightEdge = rect.width - onEl.offsetWidth / 2 - onEl.offsetLeft - rect.left;
     if (distToRightEdge < content.clientWidth / 2 + this.flyoverMarginRight) {
       let offset = content.clientWidth / 2 - distToRightEdge + this.flyoverMarginRight;
@@ -219,7 +219,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private setLeftPosition(onEl: any) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let rect: Rect = this.GetRelativeShift(onEl, content);
     this.top = rect.top + onEl.offsetTop + onEl.offsetHeight / 2 - content.clientHeight / 2;
     this.left = rect.left + onEl.offsetLeft - content.clientWidth - 20;
@@ -233,7 +233,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private setRightPosition(onEl: any) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let rect: Rect = this.GetRelativeShift(onEl, content);
     this.top = rect.top + onEl.offsetTop + onEl.offsetHeight / 2 - content.clientHeight / 2;
     this.left = rect.left + onEl.offsetLeft + onEl.offsetWidth + 20;
@@ -247,7 +247,7 @@ export class ZluxFlyoverComponent implements OnInit {
   }
 
   private verticalAlign(onEl: any, rect: Rect) {
-    let content = this.contentArea.nativeElement;
+    let content = this.contentArea!.nativeElement;
     let distToBottomEdge = rect.height + onEl.offsetHeight / 2 - onEl.offsetTop - rect.top;
     if (distToBottomEdge < content.clientHeight / 2 + this.flyoverMarginBottom) {
       let offset = content.clientHeight / 2 - distToBottomEdge + this.flyoverMarginBottom;
@@ -279,11 +279,11 @@ export class ZluxFlyoverComponent implements OnInit {
 
   forceHide() {
     if (!this.targetHover && !this.hover) {
-      this.top = undefined;
-      this.left = undefined;
+      this.top = 0;
+      this.left = 0;
       this.active = false;
     }
-    this.hideTimer = null;
+    this.hideTimer = 0;
   }
 }
 
