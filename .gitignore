@@ -1,22 +1,17 @@
-# This program and the accompanying materials are
-# made available under the terms of the Eclipse Public License v2.0 which accompanies
-# this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
-# 
-# SPDX-License-Identifier: EPL-2.0
-# 
-# Copyright Contributors to the Zowe Project.
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# compiled output
-/web
+# Compiled output
 /tmp
-/out_tsc
+/out-tsc
+/bazel-out
 
-# dependencies
+# Node
 /node_modules
+npm-debug.log
+yarn-error.log
 
 # IDEs and editors
-/.idea
+.idea/
 .project
 .classpath
 .c9/
@@ -24,35 +19,27 @@
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
+# Visual Studio Code
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
 
-# misc
-/.sass-cache
+# Miscellaneous
+.angular/cache
+.sass-cache/
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
 testem.log
 /typings
+.vscode
+projects/zlux-widgets/node_modules
 
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
+# System files
 .DS_Store
 Thumbs.db
-
-
-# This program and the accompanying materials are
-# made available under the terms of the Eclipse Public License v2.0 which accompanies
-# this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
-# 
-# SPDX-License-Identifier: EPL-2.0
-# 
-# Copyright Contributors to the Zowe Project.
+.angular
